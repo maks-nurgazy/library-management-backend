@@ -1,3 +1,6 @@
+from datetime import timedelta
+
+from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
@@ -61,7 +64,7 @@ class LendPeriods(models.Model):
     time period. This class defines frequently-used
     lending periods.
     """
-    book = models.ForeignKey('Book', on_delete=models.CASCADE)
+    book = models.OneToOneField('Book', on_delete=models.CASCADE)
     days_amount = models.IntegerField()
 
     def __str__(self):
@@ -74,17 +77,15 @@ class LendPeriods(models.Model):
         verbose_name_plural = "Lending periods"
 
 
-class Publisher(models.Model):
-    """
-    Class defines book's publisher
-    """
-    name = models.CharField(max_length=100)
+class Borrower(models.Model):
+    reader = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    book = models.ForeignKey('Book', on_delete=models.CASCADE)
+    issue_date = models.DateTimeField(default=timezone.now)
+    created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return 'Publisher: %s' % self.name
+        return self.reader.name + " borrowed " + self.book.title
 
-    class Meta:
-        get_latest_by = "name"
-        ordering = ['name']
-        verbose_name = "Publisher"
-        verbose_name_plural = "Publishers"
+    @property
+    def get_return_date(self):
+        return self.issue_date.date() + timedelta(days=self.book.lendperiods.days_amount)
