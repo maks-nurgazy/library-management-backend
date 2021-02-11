@@ -62,11 +62,11 @@ class LendPeriods(models.Model):
     time period. This class defines frequently-used
     lending periods.
     """
-    name = models.CharField(max_length=50)
+    book = models.ForeignKey('Book', on_delete=models.CASCADE)
     days_amount = models.IntegerField()
 
-    def __unicode__(self):
-        return '%s' % self.name
+    def __str__(self):
+        return f'{self.book.title} {self.days_amount}'
 
     class Meta:
         get_latest_by = "days_amount"
@@ -81,7 +81,7 @@ class Publisher(models.Model):
     """
     name = models.CharField(max_length=100)
 
-    def __unicode__(self):
+    def __str__(self):
         return 'Publisher: %s' % self.name
 
     class Meta:
