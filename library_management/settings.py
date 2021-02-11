@@ -130,3 +130,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 AUTH_USER_MODEL = 'users.User'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# FIXTURE_DIRS = (
+#     os.path.join(BASE_DIR, 'library_app/fixtures/'),
+# )

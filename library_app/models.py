@@ -51,6 +51,10 @@ class Author(models.Model):
     def __str__(self):
         return 'Author: ' + self.name + ' ' + self.surname
 
+    @property
+    def full_name(self):
+        return f'{self.name} {self.surname}'
+
     class Meta:
         get_latest_by = "name"
         ordering = ['name', 'surname']
@@ -68,7 +72,7 @@ class LendPeriods(models.Model):
     days_amount = models.IntegerField()
 
     def __str__(self):
-        return f'{self.book.title} {self.days_amount}'
+        return f'{self.book.title} for {self.days_amount} days.'
 
     class Meta:
         get_latest_by = "days_amount"

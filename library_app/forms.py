@@ -1,6 +1,7 @@
 from django import forms
 from django.core.exceptions import ObjectDoesNotExist
 
+from library_app.models import Borrower
 from users.models import User
 
 
