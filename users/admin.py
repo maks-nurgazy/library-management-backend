@@ -1,10 +1,11 @@
-from django.conf import settings
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
-from django.utils.translation import gettext as _
 from django.contrib import admin
+from django.utils.translation import gettext as _
+
+from users.models import User
 
 
-@admin.register(settings.User)
+@admin.register(User)
 class UserAdmin(BaseUserAdmin):
     ordering = ['id']
     list_display = ['email', 'role']

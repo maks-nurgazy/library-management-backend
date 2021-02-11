@@ -1,4 +1,3 @@
-from django.contrib.auth.models import User
 from django.db import models
 from django.utils import timezone
 
@@ -27,7 +26,7 @@ class Book(models.Model):
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
     genre = models.ManyToManyField(Genre, help_text="Select a genre for this book")
     language = models.ForeignKey('Language', on_delete=models.SET_NULL, null=True)
-    year = models.DateField(default=timezone.now())
+    year = models.PositiveSmallIntegerField(default=timezone.now().year)
 
     def __str__(self):
         return 'Book: ' + self.title

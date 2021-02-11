@@ -1,20 +1,19 @@
 from django.contrib.auth.base_user import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
 
 from users.managers import CustomUserManager
 
 
 class User(AbstractBaseUser, PermissionsMixin):
     ADMIN = 1
-    TEACHER = 2
-    STUDENT = 3
+    LIBRARIAN = 2
+    READER = 3
 
     ROLE_CHOICES = (
         (ADMIN, 'Admin'),
-        (TEACHER, 'Teacher'),
-        (STUDENT, 'Student')
+        (LIBRARIAN, 'Librarian'),
+        (READER, 'Reader')
     )
 
     class Meta:

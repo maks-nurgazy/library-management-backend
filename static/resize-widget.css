@@ -1,0 +1,8 @@
+select, select[multiple] {
+    min-width: 20em;
+}
+
+input[type=number]{
+    min-width: 20em;
+    height: 30px;
+}
