@@ -10,8 +10,8 @@ from library_app.models import Book
 
 
 class LoginView(FormView):
-    template_name = 'ui/login.html'
     form_class = LoginForm
+    template_name = 'login.html'
     success_url = reverse_lazy('dashboard')
 
     def form_valid(self, form):
@@ -29,7 +29,7 @@ def logout_request(request):
 class DashboardView(LoginRequiredMixin, ListView):
     model = Book
     login_url = 'login/'
-    template_name = 'ui/index.html'
+    template_name = 'index.html'
 
     def get_context_data(self, *args, **kwargs):
         context = super(DashboardView, self).get_context_data(*args, **kwargs)

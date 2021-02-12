@@ -1,8 +1,9 @@
 from datetime import timedelta
 
-from django.conf import settings
 from django.db import models
 from django.utils import timezone
+
+from users.models import User
 
 
 class Genre(models.Model):
@@ -32,7 +33,7 @@ class Book(models.Model):
     year = models.PositiveSmallIntegerField(default=timezone.now().year)
 
     def __str__(self):
-        return 'Book: ' + self.title
+        return self.title
 
     class Meta:
         ordering = ['title']
@@ -62,13 +63,14 @@ class Author(models.Model):
         verbose_name_plural = "Authors"
 
 
-class LendPeriods(models.Model):
+class BookProfile(models.Model):
     """
     Users can borrow books from library for different
     time period. This class defines frequently-used
     lending periods.
     """
     book = models.OneToOneField('Book', on_delete=models.CASCADE)
+    book_amount = models.IntegerField()
     days_amount = models.IntegerField()
 
     def __str__(self):
@@ -77,19 +79,19 @@ class LendPeriods(models.Model):
     class Meta:
         get_latest_by = "days_amount"
         ordering = ['days_amount']
-        verbose_name = "Lending period"
-        verbose_name_plural = "Lending periods"
+        verbose_name = "Book profile"
+        verbose_name_plural = "Book profiles"
 
 
 class Borrower(models.Model):
-    reader = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    reader = models.ForeignKey(User, on_delete=models.CASCADE)
     book = models.ForeignKey('Book', on_delete=models.CASCADE)
     issue_date = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.reader.name + " borrowed " + self.book.title
+        return self.reader.full_name + " borrowed " + self.book.title
 
     @property
-    def get_return_date(self):
-        return self.issue_date.date() + timedelta(days=self.book.lendperiods.days_amount)
+    def return_date(self):
+        return self.issue_date.date() + timedelta(days=self.book.bookprofile.days_amount)

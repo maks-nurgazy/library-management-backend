@@ -57,10 +57,20 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'library_management.urls'
 
+# TEMPLATE_DIRS = (
+#     os.path.join(BASE_DIR, 'templates').replace('\\', '/'),
+# )
+#
+# TEMPLATE_LOADERS = (
+#     'django.template.loaders.filesystem.Loader',
+#     'django.template.loaders.app_directories.Loader',
+#     #     'django.template.loaders.eggs.Loader',
+# )
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates/'), ],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
