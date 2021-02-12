@@ -3,7 +3,11 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
-from django.views.generic import ListView, TemplateView, FormView, RedirectView
+from django.views.generic import (
+    ListView,
+    TemplateView,
+    FormView,
+    RedirectView)
 
 from library_app.forms import LoginForm
 from library_app.models import Book

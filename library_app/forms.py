@@ -23,3 +23,4 @@ class LoginForm(forms.Form):
                 raise forms.ValidationError("Check your username/password")
         except ObjectDoesNotExist:
             raise forms.ValidationError("Check your username/password")
+

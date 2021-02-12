@@ -1,13 +1,14 @@
-from django import forms
 from django.contrib import admin
+from django.forms import ModelForm
 
 from library_app.models import (
     Author,
     Book,
     Genre,
     Language,
-    BookProfile, Borrower
-
+    BookProfile,
+    Borrower,
+    Publisher
 )
 
 
@@ -66,8 +67,32 @@ class AuthorAdmin(admin.ModelAdmin):
 
 @admin.register(BookProfile)
 class BookProfileAdmin(admin.ModelAdmin):
-    list_display = ('book', 'book_amount', 'days_amount')
+    list_display = ('book', 'book_amount_total', 'get_remain_books', 'days_amount')
 
+    # exclude = ['book_amount']
+
+    def get_remain_books(self, obj):
+        return obj.book_amount
+
+    get_remain_books.short_description = 'Available'
+
+    def formfield_for_foreignkey(self, db_field, request=None, **kwargs):
+        uri = request.build_absolute_uri().split('/')[-2]
+        if uri != 'change':
+            field = super(BookProfileAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
+            if db_field.name == 'book':
+                field.queryset = field.queryset.filter(book_profile=None)
+            return field
+        return super(BookProfileAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
+
+    class Media:
+        css = {
+            'all': ('resize-widget.css',),
+        }
+
+
+@admin.register(Publisher)
+class PublisherAdmin(admin.ModelAdmin):
     class Media:
         css = {
             'all': ('resize-widget.css',),
@@ -76,7 +101,7 @@ class BookProfileAdmin(admin.ModelAdmin):
 
 @admin.register(Borrower)
 class BorrowerAdmin(admin.ModelAdmin):
-    list_display = ('get_reader', 'get_book', 'get_issue_date', 'return_date')
+    list_display = ('get_reader', 'get_book', 'issue_date', 'return_date')
 
     def formfield_for_foreignkey(self, db_field, request=None, **kwargs):
         field = super(BorrowerAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
@@ -93,11 +118,6 @@ class BorrowerAdmin(admin.ModelAdmin):
         return obj.book.title
 
     get_book.short_description = 'Book name'
-
-    def get_issue_date(self, obj):
-        return obj.issue_date.date()
-
-    get_issue_date.short_description = 'Issue date'
 
     class Media:
         css = {

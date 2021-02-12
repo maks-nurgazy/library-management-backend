@@ -8,12 +8,12 @@ from users.managers import CustomUserManager
 class User(AbstractBaseUser, PermissionsMixin):
     ADMIN = 1
     LIBRARIAN = 2
-    READER = 3
+    BORROWER = 3
 
     ROLE_CHOICES = (
         (ADMIN, 'Admin'),
         (LIBRARIAN, 'Librarian'),
-        (READER, 'Reader')
+        (BORROWER, 'Borrower')
     )
 
     class Meta:
