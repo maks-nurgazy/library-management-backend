@@ -8,7 +8,7 @@ from django.views.generic import (
     TemplateView,
     FormView,
     RedirectView)
-
+from django.utils import timezone
 from library_app.forms import LoginForm
 from library_app.models import Book
 
@@ -37,5 +37,18 @@ class DashboardView(LoginRequiredMixin, ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(DashboardView, self).get_context_data(*args, **kwargs)
-        context['lol'] = 'max'
+        user = self.request.user
+        # data_list = [{'name': 'Jamilla', 'delta': 4, 'progress_value': 40}, ]
+        if user.role == 3:
+            borrowed_books = user.borrowed_books.all()
+            data_list = []
+            for borrowed_book in borrowed_books:
+                dic = {}
+                delta = borrowed_book.return_date - timezone.datetime.today().date()
+
+                dic['book'] = borrowed_book.book.title
+                dic['delta'] = delta
+                dic['progress_value'] = 100 // delta.days
+                data_list.append(dic)
+            context['data_list'] = data_list
         return context

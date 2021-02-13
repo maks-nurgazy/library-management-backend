@@ -107,6 +107,8 @@ class BorrowerAdmin(admin.ModelAdmin):
         field = super(BorrowerAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
         if db_field.name == 'reader':
             field.queryset = field.queryset.filter(role=3)
+        if db_field.name == 'book':
+            field.queryset = field.queryset.filter(book_profile__book_amount__gt=0)
         return field
 
     def get_reader(self, obj):

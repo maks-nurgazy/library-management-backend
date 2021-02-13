@@ -112,7 +112,7 @@ class Publisher(models.Model):
 
 
 class Borrower(models.Model):
-    reader = models.ForeignKey(User, on_delete=models.CASCADE)
+    reader = models.ForeignKey(User, on_delete=models.CASCADE, related_name='borrowed_books')
     book = models.ForeignKey('Book', on_delete=models.CASCADE)
     issue_date = models.DateField(default=timezone.datetime.today)
     created = models.DateTimeField(auto_now_add=True)
