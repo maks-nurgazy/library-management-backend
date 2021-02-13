@@ -7,7 +7,7 @@ from drf_yasg import openapi
 from library_app.api.views import LanguageApiViewSet, GenreApiViewSet, AuthorApiViewSet, PublisherApiViewSet, \
     BookApiViewSet, BookProfileApiViewSet, BorrowerApiViewSet
 
-router = SimpleRouter()
+router = DefaultRouter()
 router.register('languages', LanguageApiViewSet)
 router.register('genres', GenreApiViewSet)
 router.register('authors', AuthorApiViewSet)

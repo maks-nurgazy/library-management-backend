@@ -40,6 +40,11 @@ class BookProfileSerializer(serializers.ModelSerializer):
 
 
 class BorrowerSerializer(serializers.ModelSerializer):
+    return_date = serializers.SerializerMethodField()
+
     class Meta:
         model = Borrower
-        fields = '__all__'
+        fields = ('id', 'reader', 'book', 'issue_date', 'created', 'return_date')
+
+    def get_return_date(self, obj):
+        return obj.return_date

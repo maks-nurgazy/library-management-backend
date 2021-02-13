@@ -6,7 +6,7 @@ from drf_yasg import openapi
 
 from users.api.views import UserApiViewSet
 
-router = SimpleRouter()
+router = DefaultRouter()
 router.register('users', UserApiViewSet)
 
 schema_view = get_schema_view(
