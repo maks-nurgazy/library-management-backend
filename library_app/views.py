@@ -27,7 +27,7 @@ class LoginView(FormView):
 def logout_request(request):
     logout(request)
     messages.info(request, "Logged out successfully!")
-    return redirect('login')
+    return redirect('login_url_template')
 
 
 class DashboardView(LoginRequiredMixin, ListView):
@@ -45,7 +45,6 @@ class DashboardView(LoginRequiredMixin, ListView):
             for borrowed_book in borrowed_books:
                 dic = {}
                 delta = borrowed_book.return_date - timezone.datetime.today().date()
-
                 dic['book'] = borrowed_book.book.title
                 dic['delta'] = delta
                 dic['progress_value'] = 100 // delta.days

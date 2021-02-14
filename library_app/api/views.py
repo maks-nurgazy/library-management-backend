@@ -1,9 +1,29 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.exceptions import ObjectDoesNotExist
 from rest_framework.viewsets import ModelViewSet
 
-from library_app.api.permissions import IsAdminOrReadOnly, IsAdminOrLibrarianOrReadOnly
-from library_app.api.serializers import LanguageSerializer, GenreSerializer, AuthorSerializer, PublisherSerializer, \
-    BookSerializer, BookProfileSerializer, BorrowerSerializer
-from library_app.models import Language, Genre, Author, Publisher, Book, BookProfile, Borrower
+from library_app.api.permissions import (
+    IsAdminOrReadOnly,
+    IsAdminOrLibrarianOrReadOnly
+)
+from library_app.api.serializers import (
+    LanguageSerializer,
+    GenreSerializer,
+    AuthorSerializer,
+    PublisherSerializer,
+    BookSerializer,
+    BookProfileSerializer,
+    BorrowerSerializer
+)
+from library_app.models import (
+    Language,
+    Genre,
+    Author,
+    Publisher,
+    Book,
+    BookProfile,
+    Borrower
+)
 
 
 class LanguageApiViewSet(ModelViewSet):
@@ -25,8 +45,8 @@ class AuthorApiViewSet(ModelViewSet):
 
 
 class PublisherApiViewSet(ModelViewSet):
-    permission_classes = (IsAdminOrReadOnly,)
     serializer_class = PublisherSerializer
+    permission_classes = (IsAdminOrReadOnly,)
     queryset = Publisher.objects.all()
 
 
@@ -42,7 +62,18 @@ class BookProfileApiViewSet(ModelViewSet):
     queryset = BookProfile.objects.all()
 
 
-class BorrowerApiViewSet(ModelViewSet):
+class BorrowerApiViewSet(LoginRequiredMixin, ModelViewSet):
     permission_classes = (IsAdminOrLibrarianOrReadOnly,)
     serializer_class = BorrowerSerializer
     queryset = Borrower.objects.all()
+
+    def get_queryset(self):
+        if self.request.user.role == 3:
+            try:
+                queryset = Borrower.objects.filter(reader=self.request.user)
+
+            except ObjectDoesNotExist:
+                queryset = []
+        else:
+            queryset = Borrower.objects.all()
+        return queryset
