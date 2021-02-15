@@ -1,4 +1,4 @@
-from datetime import timedelta
+from datetime import timedelta, date
 
 from django.db import models
 from django.utils import timezone
@@ -81,8 +81,8 @@ class BookProfile(models.Model):
     """
     book = models.OneToOneField('Book', on_delete=models.CASCADE, related_name='book_profile')
     publisher = models.ForeignKey('Publisher', on_delete=models.SET_NULL, null=True)
-    book_amount = models.IntegerField()
-    book_amount_total = models.IntegerField()
+    book_amount = models.PositiveIntegerField()
+    book_amount_total = models.PositiveIntegerField()
     days_amount = models.IntegerField()
 
     def __str__(self):
@@ -113,8 +113,8 @@ class Publisher(models.Model):
 
 class Borrower(models.Model):
     reader = models.ForeignKey(User, on_delete=models.CASCADE, related_name='borrowed_books')
-    book = models.ForeignKey('Book', on_delete=models.CASCADE)
-    issue_date = models.DateField(default=timezone.datetime.today)
+    book = models.ForeignKey('Book', on_delete=models.SET_NULL, null=True)
+    issue_date = models.DateField(default=date.today)
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -122,7 +122,9 @@ class Borrower(models.Model):
 
     @property
     def return_date(self):
-        return self.issue_date + timedelta(days=self.book.book_profile.days_amount)
+        if hasattr(self.book, 'book_profile'):
+            return self.issue_date + timedelta(days=self.book.book_profile.days_amount)
+        return self.issue_date + timedelta(days=3)
 
     class Meta:
         ordering = ['created']

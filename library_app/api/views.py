@@ -1,5 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import ObjectDoesNotExist
+from drf_yasg.utils import swagger_auto_schema
 from rest_framework.viewsets import ModelViewSet
 
 from library_app.api.permissions import (
@@ -71,7 +72,6 @@ class BorrowerApiViewSet(LoginRequiredMixin, ModelViewSet):
         if self.request.user.role == 3:
             try:
                 queryset = Borrower.objects.filter(reader=self.request.user)
-
             except ObjectDoesNotExist:
                 queryset = []
         else:

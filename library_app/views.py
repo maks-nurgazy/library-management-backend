@@ -47,7 +47,10 @@ class DashboardView(LoginRequiredMixin, ListView):
                 delta = borrowed_book.return_date - timezone.datetime.today().date()
                 dic['book'] = borrowed_book.book.title
                 dic['delta'] = delta
-                dic['progress_value'] = 100 // delta.days
+                days = delta.days
+                if days < 1:
+                    days = 1
+                dic['progress_value'] = 100 // days
                 data_list.append(dic)
             context['data_list'] = data_list
         return context
