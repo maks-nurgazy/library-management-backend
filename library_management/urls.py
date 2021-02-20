@@ -36,9 +36,6 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    # Template urls
-    path('', include('library_app.urls')),
-
     # API urls
     path('api/v1/library/', include('library_app.api.urls')),
     path('api/v1/auth/', include('users.api.urls')),

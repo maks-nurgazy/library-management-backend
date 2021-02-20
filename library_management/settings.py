@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'users',
 
     # Third party
-    'crispy_forms',
     'rest_framework',
     'drf_yasg',
 
@@ -62,20 +61,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'library_management.urls'
 
-# TEMPLATE_DIRS = (
-#     os.path.join(BASE_DIR, 'templates').replace('\\', '/'),
-# )
-#
-# TEMPLATE_LOADERS = (
-#     'django.template.loaders.filesystem.Loader',
-#     'django.template.loaders.app_directories.Loader',
-#     #     'django.template.loaders.eggs.Loader',
-# )
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -143,10 +132,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = 'users.User'
-
-LOGIN_URL = '/login'
-
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # REST framework settings
 REST_FRAMEWORK = {

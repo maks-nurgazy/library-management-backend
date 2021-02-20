@@ -9,7 +9,7 @@ from library_app.models import (
     Language,
     BookProfile,
     Borrower,
-    Publisher
+    Publisher, ReaderDebt
 )
 
 
@@ -102,7 +102,7 @@ class PublisherAdmin(admin.ModelAdmin):
 
 @admin.register(Borrower)
 class BorrowerAdmin(admin.ModelAdmin):
-    list_display = ('get_reader', 'get_book', 'issue_date', 'return_date')
+    list_display = ('get_reader', 'get_book', 'received_date', 'return_date')
 
     def formfield_for_foreignkey(self, db_field, request=None, **kwargs):
         field = super(BorrowerAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
@@ -121,6 +121,16 @@ class BorrowerAdmin(admin.ModelAdmin):
         return obj.book.title
 
     get_book.short_description = 'Book name'
+
+    class Media:
+        css = {
+            'all': ('resize-widget.css',),
+        }
+
+
+@admin.register(ReaderDebt)
+class ReaderDebtAdmin(admin.ModelAdmin):
+    list_display = ('borrower', 'debt')
 
     class Media:
         css = {

@@ -1,7 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter, SimpleRouter
 
-
 from library_app.api.views import (
     LanguageApiViewSet,
     GenreApiViewSet,
@@ -11,8 +10,6 @@ from library_app.api.views import (
     BookProfileApiViewSet,
     BorrowerApiViewSet
 )
-
-
 
 router = DefaultRouter()
 router.register('languages', LanguageApiViewSet)

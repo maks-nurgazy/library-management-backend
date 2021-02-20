@@ -114,8 +114,9 @@ class Publisher(models.Model):
 class Borrower(models.Model):
     reader = models.ForeignKey(User, on_delete=models.CASCADE, related_name='borrowed_books')
     book = models.ForeignKey('Book', on_delete=models.SET_NULL, null=True)
-    issue_date = models.DateField(default=date.today)
+    received_date = models.DateField(default=date.today)
     created = models.DateTimeField(auto_now_add=True)
+    receive_count = models.SmallIntegerField(editable=False, default=1)
 
     def __str__(self):
         return self.reader.full_name + " borrowed " + self.book.title
@@ -123,8 +124,16 @@ class Borrower(models.Model):
     @property
     def return_date(self):
         if hasattr(self.book, 'book_profile'):
-            return self.issue_date + timedelta(days=self.book.book_profile.days_amount)
-        return self.issue_date + timedelta(days=3)
+            return self.received_date + timedelta(days=self.book.book_profile.days_amount)
+        return self.received_date + timedelta(days=3)
 
     class Meta:
         ordering = ['created']
+
+
+class ReaderDebt(models.Model):
+    borrower = models.ForeignKey(Borrower, on_delete=models.CASCADE, related_name='reader_debt')
+    debt = models.FloatField(default=0.0)
+
+    def __str__(self):
+        return f'{self.borrower.reader.full_name} {self.debt}'

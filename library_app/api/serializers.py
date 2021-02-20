@@ -85,7 +85,7 @@ class BorrowerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Borrower
-        fields = ('id', 'reader', 'book', 'issue_date', 'created', 'return_date', 'days_remain')
+        fields = ('id', 'reader', 'book', 'received_date', 'created', 'return_date', 'days_remain')
 
     def get_return_date(self, obj):
         return obj.return_date
