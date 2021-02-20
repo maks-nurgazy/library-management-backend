@@ -7,9 +7,7 @@ from library_app.models import (
     Genre,
     Author,
     Publisher,
-    Book,
-    BookProfile,
-    Borrower
+    Book
 )
 from users.models import User
 
@@ -63,40 +61,3 @@ class BookSerializer(serializers.ModelSerializer):
         if year and year > timezone.datetime.today().year:
             raise serializers.ValidationError("Book year must be less than current year")
         return year
-
-
-class BookProfileSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = BookProfile
-        fields = '__all__'
-
-    def to_representation(self, obj):
-        ret = super(BookProfileSerializer, self).to_representation(obj)
-        request = self.context.get('request', None)
-        if request and request.user.role == 3:
-            ret.pop('book_amount_total')
-            ret.pop('book_amount')
-        return ret
-
-
-class BorrowerSerializer(serializers.ModelSerializer):
-    return_date = serializers.SerializerMethodField()
-    days_remain = serializers.SerializerMethodField()
-
-    class Meta:
-        model = Borrower
-        fields = ('id', 'reader', 'book', 'received_date', 'created', 'return_date', 'days_remain')
-
-    def get_return_date(self, obj):
-        return obj.return_date
-
-    def get_days_remain(self, obj):
-        delta = obj.return_date - timezone.datetime.today().date()
-        return delta.days
-
-    def to_representation(self, obj):
-        ret = super(BorrowerSerializer, self).to_representation(obj)
-        request = self.context.get('request', None)
-        if request and request.user.role == 3:
-            ret.pop('created')
-        return ret

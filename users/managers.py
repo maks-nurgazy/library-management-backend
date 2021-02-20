@@ -3,12 +3,7 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 
-class AdminManager(BaseUserManager):
-    """
-    Custom user model where the email address is the unique identifier
-    and has an is_admin field to allow access to the admin app
-    """
-
+class UserManager(BaseUserManager):
     def create_user(self, email, password, **extra_fields):
         if not email:
             raise ValueError(_("The email must be set"))
@@ -19,6 +14,13 @@ class AdminManager(BaseUserManager):
         user.set_password(password)
         user.save(using=self._db)
         return user
+
+
+class AdminManager(UserManager):
+    """
+    Custom user model where the email address is the unique identifier
+    and has an is_admin field to allow access to the admin app
+    """
 
     def create_superuser(self, email, password, **extra_fields):
         extra_fields.setdefault('is_active', True)
@@ -31,11 +33,25 @@ class AdminManager(BaseUserManager):
         return self.create_user(email, password, **extra_fields)
 
 
-class LibrarianManager(models.Manager):
+class LibrarianManager(UserManager):
+
+    def create_librarian(self, email, password, **extra_fields):
+        extra_fields.setdefault('is_active', True)
+        extra_fields.setdefault('is_staff', True)
+        extra_fields.setdefault('role', "LIBRARIAN")
+        return self.create_user(email, password, **extra_fields)
+
     def get_queryset(self, *args, **kwargs):
         return super().get_queryset(*args, **kwargs).filter(role='LIBRARIAN')
 
 
-class CustomerManager(models.Manager):
+class CustomerManager(UserManager):
+
+    def create_customer(self, email, password, **extra_fields):
+        extra_fields.setdefault('is_active', True)
+        extra_fields.setdefault('is_staff', False)
+        extra_fields.setdefault('role', "CUSTOMER")
+        return self.create_user(email, password, **extra_fields)
+
     def get_queryset(self, *args, **kwargs):
         return super().get_queryset(*args, **kwargs).filter(role='CUSTOMER')

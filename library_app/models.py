@@ -2,8 +2,50 @@ from datetime import timedelta, date
 
 from django.db import models
 from django.utils import timezone
+from django.core.validators import MaxValueValidator, MinValueValidator
 
-from users.models import User
+from users.models import User, Customer
+
+
+class Province(models.Model):  # Oblast
+    name = models.CharField(max_length=50)
+
+
+class City(models.Model):  # Gorod
+    name = models.CharField(max_length=50)
+    province = models.ForeignKey(Province, on_delete=models.CASCADE)
+
+
+class District(models.Model):  # Rayon
+    name = models.CharField(max_length=50)
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
+
+
+class Address(models.Model):  # Concrete address
+    district = models.ForeignKey(District, on_delete=models.CASCADE)
+    name = models.CharField(max_length=50)
+
+
+def library_image_directory(instance, filename):
+    return f'library/{instance.name}/{filename}'
+
+
+class Library(models.Model):
+    name = models.CharField(max_length=50)
+    image = models.ImageField(upload_to=library_image_directory, null=True)
+    address = models.ForeignKey(Address, on_delete=models.SET_NULL, null=True)
+
+
+class LibraryWorkingTime(models.Model):
+    library = models.ForeignKey(Library, on_delete=models.CASCADE)
+    day_of_week = models.SmallIntegerField(
+        validators=[MaxValueValidator(7), MinValueValidator(1)]
+    )
+    open_time = models.TimeField()
+    close_time = models.TimeField()
+
+    class Meta:
+        unique_together = ('library', 'day_of_week')
 
 
 class Genre(models.Model):
@@ -26,28 +68,6 @@ class Language(models.Model):
 
     class Meta:
         ordering = ['name']
-
-
-class Book(models.Model):
-    """
-    An Book class - to describe book in the system.
-    """
-    title = models.CharField(max_length=200)
-    isbn = models.CharField('ISBN', max_length=13, unique=True,
-                            help_text='13 Character <a href="https://www.isbn-international.org/content/what-isbn'
-                                      '">ISBN number</a>')
-    author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
-    genre = models.ManyToManyField(Genre, help_text="Select a genre for this book")
-    language = models.ForeignKey('Language', on_delete=models.SET_NULL, null=True)
-    year = models.PositiveSmallIntegerField(default=timezone.now().year)
-
-    def __str__(self):
-        return self.title
-
-    class Meta:
-        ordering = ['title']
-        verbose_name = "Book"
-        verbose_name_plural = "Books"
 
 
 class Author(models.Model):
@@ -73,28 +93,6 @@ class Author(models.Model):
         verbose_name_plural = "Authors"
 
 
-class BookProfile(models.Model):
-    """
-    Users can borrow books from library for different
-    time period. This class defines frequently-used
-    lending periods.
-    """
-    book = models.OneToOneField('Book', on_delete=models.CASCADE, related_name='book_profile')
-    publisher = models.ForeignKey('Publisher', on_delete=models.SET_NULL, null=True)
-    book_amount = models.PositiveIntegerField()
-    book_amount_total = models.PositiveIntegerField()
-    days_amount = models.IntegerField()
-
-    def __str__(self):
-        return f'{self.book.title} for {self.days_amount} days.'
-
-    class Meta:
-        get_latest_by = "days_amount"
-        ordering = ['days_amount']
-        verbose_name = "Book profile"
-        verbose_name_plural = "Book profiles"
-
-
 class Publisher(models.Model):
     """
     Class defines book's publisher
@@ -111,29 +109,66 @@ class Publisher(models.Model):
         verbose_name_plural = "Publishers"
 
 
-class Borrower(models.Model):
-    reader = models.ForeignKey(User, on_delete=models.CASCADE, related_name='borrowed_books')
-    book = models.ForeignKey('Book', on_delete=models.SET_NULL, null=True)
-    received_date = models.DateField(default=date.today)
-    created = models.DateTimeField(auto_now_add=True)
-    receive_count = models.SmallIntegerField(editable=False, default=1)
+class LendPeriod(models.Model):
+    name = models.CharField(max_length=200)
+    days_amount = models.PositiveSmallIntegerField()
+
+
+class BookFormat(models.Model):
+    name = models.CharField(max_length=50, help_text="E-book, pdf, audio etc...")
+
+
+class Book(models.Model):
+    """
+    An Book class - to describe book in the system.
+    """
+    title = models.CharField(max_length=200)
+    summary = models.TextField(null=True, blank=True)
+    isbn = models.CharField('ISBN', max_length=13, unique=True,
+                            help_text='13 Character <a href="https://www.isbn-international.org/content/what-isbn'
+                                      '">ISBN number</a>')
+    author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
+    publisher = models.ForeignKey('Publisher', on_delete=models.SET_NULL, null=True)
+    genre = models.ManyToManyField(Genre, help_text="Select a genre for this book")
+    language = models.ForeignKey('Language', on_delete=models.SET_NULL, null=True)
+    publish_date = models.PositiveSmallIntegerField(default=timezone.now().year)
+    page_size = models.PositiveSmallIntegerField()
+    lend_period = models.ForeignKey('LendPeriod', models.SET_NULL, null=True)
 
     def __str__(self):
-        return self.reader.full_name + " borrowed " + self.book.title
+        return self.title
+
+    class Meta:
+        ordering = ['title']
+        verbose_name = "Book"
+        verbose_name_plural = "Books"
+
+
+class Borrow(models.Model):
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name='borrowed_books')
+    book = models.ForeignKey('Book', on_delete=models.SET_NULL, null=True)
+    lend_from = models.DateField(default=date.today)
+    x_renewal = models.SmallIntegerField(editable=False, default=1)
+    created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.customer.full_name + " borrowed " + self.book.title
 
     @property
     def return_date(self):
         if hasattr(self.book, 'book_profile'):
-            return self.received_date + timedelta(days=self.book.book_profile.days_amount)
-        return self.received_date + timedelta(days=3)
+            return self.lend_from + timedelta(days=self.book.book_profile.days_amount)
+        return self.lend_from + timedelta(days=3)
 
     class Meta:
         ordering = ['created']
 
 
-class ReaderDebt(models.Model):
-    borrower = models.ForeignKey(Borrower, on_delete=models.CASCADE, related_name='reader_debt')
-    debt = models.FloatField(default=0.0)
+class Account(models.Model):
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name='reader_debt')
+    bill = models.FloatField(default=0.0)
 
-    def __str__(self):
-        return f'{self.borrower.reader.full_name} {self.debt}'
+
+class Fine(models.Model):
+    name = models.CharField(max_length=50)
+    volume = models.PositiveIntegerField()

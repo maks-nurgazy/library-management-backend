@@ -12,18 +12,14 @@ from library_app.api.serializers import (
     GenreSerializer,
     AuthorSerializer,
     PublisherSerializer,
-    BookSerializer,
-    BookProfileSerializer,
-    BorrowerSerializer
+    BookSerializer
 )
 from library_app.models import (
     Language,
     Genre,
     Author,
     Publisher,
-    Book,
-    BookProfile,
-    Borrower
+    Book
 )
 
 
@@ -55,25 +51,3 @@ class BookApiViewSet(ModelViewSet):
     permission_classes = (IsAdminOrReadOnly,)
     serializer_class = BookSerializer
     queryset = Book.objects.all()
-
-
-class BookProfileApiViewSet(ModelViewSet):
-    permission_classes = (IsAdminOrReadOnly,)
-    serializer_class = BookProfileSerializer
-    queryset = BookProfile.objects.all()
-
-
-class BorrowerApiViewSet(LoginRequiredMixin, ModelViewSet):
-    permission_classes = (IsAdminOrLibrarianOrReadOnly,)
-    serializer_class = BorrowerSerializer
-    queryset = Borrower.objects.all()
-
-    def get_queryset(self):
-        if self.request.user.role == 3:
-            try:
-                queryset = Borrower.objects.filter(reader=self.request.user)
-            except ObjectDoesNotExist:
-                queryset = []
-        else:
-            queryset = Borrower.objects.all()
-        return queryset

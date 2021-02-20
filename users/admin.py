@@ -2,7 +2,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib import admin
 from django.utils.translation import gettext as _
 
-from users.models import User
+from users.models import User, Librarian
 
 
 @admin.register(User)
@@ -25,3 +25,8 @@ class UserAdmin(BaseUserAdmin):
             'fields': ('first_name', 'last_name', 'email', 'password1', 'password2', 'role')
         }),
     )
+
+
+@admin.register(Librarian)
+class LibrarianAdmin(admin.ModelAdmin):
+    pass
