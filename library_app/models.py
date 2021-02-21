@@ -7,23 +7,24 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from users.models import User, Customer
 
 
-class Province(models.Model):  # Oblast
+class Region(models.Model):  # Oblast
     name = models.CharField(max_length=50)
 
 
 class City(models.Model):  # Gorod
     name = models.CharField(max_length=50)
-    province = models.ForeignKey(Province, on_delete=models.CASCADE)
+    province = models.ForeignKey(Region, on_delete=models.CASCADE)
 
 
 class District(models.Model):  # Rayon
     name = models.CharField(max_length=50)
-    city = models.ForeignKey(City, on_delete=models.CASCADE)
+    city = models.ForeignKey(Region, on_delete=models.CASCADE)
 
 
 class Address(models.Model):  # Concrete address
     district = models.ForeignKey(District, on_delete=models.CASCADE)
-    name = models.CharField(max_length=50)
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
+    location = models.CharField(max_length=50)
 
 
 def library_image_directory(instance, filename):

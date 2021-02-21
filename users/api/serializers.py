@@ -56,7 +56,6 @@ class UserLoginSerializer(serializers.Serializer):
     password = serializers.CharField(max_length=128, write_only=True)
     access = serializers.CharField(read_only=True)
     refresh = serializers.CharField(read_only=True)
-    role = serializers.CharField(read_only=True)
 
     def create(self, validated_date):
         pass
@@ -79,8 +78,7 @@ class UserLoginSerializer(serializers.Serializer):
             validation = {
                 'access': access_token,
                 'refresh': refresh_token,
-                'email': user.email,
-                'role': user.role,
+                'email': user.email
             }
             return validation
         except User.DoesNotExist:

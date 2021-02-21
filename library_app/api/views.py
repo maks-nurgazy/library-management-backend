@@ -1,6 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import ObjectDoesNotExist
-from drf_yasg.utils import swagger_auto_schema
 from rest_framework.viewsets import ModelViewSet
 
 from library_app.api.permissions import (
@@ -12,15 +11,25 @@ from library_app.api.serializers import (
     GenreSerializer,
     AuthorSerializer,
     PublisherSerializer,
-    BookSerializer
+    BookSerializer, LibrarySerializer, AddressSerializer
 )
 from library_app.models import (
     Language,
     Genre,
     Author,
     Publisher,
-    Book
+    Book, Library, Address
 )
+
+
+class AddressApiViewSet(ModelViewSet):
+    serializer_class = AddressSerializer
+    queryset = Address.objects.all()
+
+
+class LibraryApiViewSet(ModelViewSet):
+    serializer_class = LibrarySerializer
+    queryset = Library.objects.all()
 
 
 class LanguageApiViewSet(ModelViewSet):

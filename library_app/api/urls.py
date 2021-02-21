@@ -6,7 +6,9 @@ from library_app.api.views import (
     GenreApiViewSet,
     AuthorApiViewSet,
     PublisherApiViewSet,
-    BookApiViewSet
+    BookApiViewSet,
+    LibraryApiViewSet,
+    AddressApiViewSet
 )
 
 router = DefaultRouter()
@@ -15,8 +17,9 @@ router.register('genres', GenreApiViewSet)
 router.register('authors', AuthorApiViewSet)
 router.register('publishers', PublisherApiViewSet)
 router.register('books', BookApiViewSet)
+router.register('address', AddressApiViewSet)
+router.register('', LibraryApiViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-
 ]

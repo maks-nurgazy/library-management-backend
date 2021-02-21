@@ -36,18 +36,8 @@ class UserLoginView(GenericAPIView):
 
     def post(self, request):
         serializer = self.serializer_class(data=request.data)
-        valid = serializer.is_valid(raise_exception=True)
-
+        valid = serializer.is_valid()
         if valid:
-            status_code = status.HTTP_200_OK
-            response = {
-                'access': serializer.data['access'],
-                'refresh': serializer.data['refresh'],
-                'authenticatedUser': {
-                    'email': serializer.data['email'],
-                    'role': serializer.data['role']
-                }
-            }
-            return Response(response, status=status_code)
+            return Response(serializer.data, status=status.HTTP_200_OK)
         else:
-            return Response("not valid", status=status.HTTP_400_BAD_REQUEST)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
