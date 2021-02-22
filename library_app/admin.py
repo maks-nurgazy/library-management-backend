@@ -1,69 +1,71 @@
 from django.contrib import admin
 
+
 from library_app.models import (
-    Author,
-    Book,
-    Genre,
-    Language,
-    Publisher
+    Account,
+    Fine,
+    Borrow,
+    LendPeriod,
+    LibraryWorkingTime,
+    Library
 )
 
 
-@admin.register(Book)
-class BookAdmin(admin.ModelAdmin):
-    list_display = ('title', 'get_author', 'publish_date')
+@admin.register(Account)
+class AccountAdmin(admin.ModelAdmin):
+    list_display = ('customer', 'bill')
 
     class Media:
         css = {
             'all': ('resize-widget.css',),
         }
 
-    def get_author(self, obj):
-        return obj.author.full_name
 
-    get_author.short_description = 'Author'
-    get_author.admin_order_field = 'title'
-
-
-@admin.register(Genre)
-class GenreAdmin(admin.ModelAdmin):
+@admin.register(Fine)
+class FineAdmin(admin.ModelAdmin):
     class Media:
         css = {
             'all': ('resize-widget.css',),
         }
 
 
-@admin.register(Language)
-class LanguageAdmin(admin.ModelAdmin):
+@admin.register(Borrow)
+class BorrowAdmin(admin.ModelAdmin):
+    list_display = ('customer', 'book', 'lend_from', 'return_date', 'lend_type')
+
     class Media:
         css = {
             'all': ('resize-widget.css',),
         }
 
+    def lend_type(self, obj):
+        return obj.book.lend_period.name
 
-@admin.register(Author)
-class AuthorAdmin(admin.ModelAdmin):
-    list_display = ('get_author', 'get_books')
+    lend_type.short_description = 'Lend type'
+    lend_type.admin_order_field = 'book__lend_period__name'
 
-    def get_author(self, obj):
-        return obj.full_name
 
-    get_author.short_description = 'Author'
-    get_author.admin_order_field = 'name'
-
-    def get_books(self, obj):
-        last_three = obj.book_set.all()[:3]
-        return list(last_three)
-
-    get_books.short_description = 'Books'
+@admin.register(LendPeriod)
+class LendPeriodAdmin(admin.ModelAdmin):
+    list_display = ('name', 'days_amount')
 
     css = {
         'all': ('resize-widget.css',),
     }
 
 
-@admin.register(Publisher)
-class PublisherAdmin(admin.ModelAdmin):
+@admin.register(LibraryWorkingTime)
+class LibraryWorkingTimeAdmin(admin.ModelAdmin):
+    class Media:
+        css = {
+            'all': ('resize-widget.css',),
+        }
+
+
+@admin.register(Library)
+class LibraryAdmin(admin.ModelAdmin):
+    list_display = ('name', 'address')
+
     class Media:
         css = {
             'all': ('resize-widget.css',),

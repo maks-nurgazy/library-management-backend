@@ -40,6 +40,7 @@ urlpatterns = [
 
     # API urls
     path('api/v1/libraries/', include('library_app.api.urls')),
+    path('api/v1/books/', include('book_shelf.api.urls')),
     path('api/v1/auth/', include('users.api.urls')),
 
     path('api/swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),

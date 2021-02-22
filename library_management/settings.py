@@ -40,8 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Local
-    'library_app',
     'users',
+    'library_app',
+    'book_shelf',
 
     # Third party
     'rest_framework',

@@ -2,10 +2,9 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib import admin
 from django.utils.translation import gettext as _
 
-from users.models import User, Librarian
+from users.models import User, Librarian, Customer, Admin
 
 
-@admin.register(User)
 class UserAdmin(BaseUserAdmin):
     ordering = ['id']
     list_display = ['email', 'role']
@@ -22,11 +21,21 @@ class UserAdmin(BaseUserAdmin):
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('first_name', 'last_name', 'email', 'password1', 'password2', 'role')
+            'fields': ('first_name', 'last_name', 'email', 'password1', 'password2')
         }),
     )
 
 
+@admin.register(Admin)
+class BaseAdmin(UserAdmin):
+    pass
+
+
 @admin.register(Librarian)
-class LibrarianAdmin(admin.ModelAdmin):
+class LibrarianAdmin(UserAdmin):
+    pass
+
+
+@admin.register(Customer)
+class CustomerAdmin(UserAdmin):
     pass

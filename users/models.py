@@ -2,7 +2,7 @@ from django.contrib.auth.base_user import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 from django.db import models
 
-from users.managers import AdminManager, LibrarianManager, CustomerManager, AdminManager
+from users.managers import LibrarianManager, CustomerManager, AdminManager
 
 
 class User(AbstractBaseUser, PermissionsMixin):
@@ -15,15 +15,22 @@ class User(AbstractBaseUser, PermissionsMixin):
         verbose_name = 'user'
         verbose_name_plural = 'users'
 
+    base_role = Roles.CUSTOMER
+
     email = models.EmailField(unique=True)
     first_name = models.CharField(max_length=30, blank=True)
     last_name = models.CharField(max_length=50, blank=True)
-    role = models.CharField(choices=Roles.choices, blank=True, null=True, default="CUSTOMER", max_length=20)
+    role = models.CharField(choices=Roles.choices, blank=True, null=True, default=base_role, max_length=20)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            self.role = self.base_role
+        return super().save(*args, **kwargs)
 
     @property
     def full_name(self):
@@ -36,7 +43,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 
 class Admin(User):
-    base_type = User.Roles.ADMIN
+    base_role = User.Roles.ADMIN
     objects = AdminManager()
 
     class Meta:
@@ -44,7 +51,7 @@ class Admin(User):
 
 
 class Librarian(User):
-    base_type = User.Roles.LIBRARIAN
+    base_role = User.Roles.LIBRARIAN
     objects = LibrarianManager()
 
     class Meta:
@@ -52,7 +59,7 @@ class Librarian(User):
 
 
 class Customer(User):
-    base_type = User.Roles.CUSTOMER
+    base_role = User.Roles.CUSTOMER
     objects = CustomerManager()
 
     class Meta:
