@@ -3,12 +3,14 @@ certifi==2020.12.5
 chardet==4.0.0
 coreapi==2.3.3
 coreschema==0.0.4
+dj-database-url==0.5.0
 Django==3.1.6
 django-crispy-forms==1.11.0
 django-filter==2.4.0
 djangorestframework==3.12.2
 djangorestframework-simplejwt==4.6.0
 drf-yasg==1.20.0
+gunicorn==20.0.4
 idna==2.10
 inflection==0.5.1
 itypes==1.2.0
@@ -16,6 +18,7 @@ Jinja2==2.11.3
 Markdown==3.3.3
 MarkupSafe==1.1.1
 packaging==20.9
+Pillow==8.1.0
 PyJWT==2.0.1
 pyparsing==2.4.7
 pytz==2021.1
@@ -25,3 +28,5 @@ ruamel.yaml.clib==0.2.2
 sqlparse==0.4.1
 uritemplate==3.0.1
 urllib3==1.26.3
+whitenoise==5.2.0
+psycopg2==2.6.2
