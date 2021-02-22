@@ -131,3 +131,9 @@ dmypy.json
 .idea
 
 media/library
+
+
+*.bak
+
+#Database
+*.sqlite3
