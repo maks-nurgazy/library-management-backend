@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'e9_3zcn1+mm_&=%&l)$-m#67ps9-r3
 
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = ['salty-thicket-51049.herokuapp.com/', '127.0.0.1']
+ALLOWED_HOSTS = [".herokuapp.com", 'salty-thicket-51049.herokuapp.com/', '127.0.0.1']
 
 # Application definition
 

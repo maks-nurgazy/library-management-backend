@@ -1,4 +1,0 @@
-{
-  "load": "python manage.py loaddata group.json",
-  "dump": "python3 manage.py dumpdata users --indent 4 > user_fixtures.json"
-}
