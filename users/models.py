@@ -15,7 +15,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         verbose_name = 'user'
         verbose_name_plural = 'users'
 
-    base_role = Roles.CUSTOMER
+    base_role = Roles.ADMIN
 
     email = models.EmailField(unique=True)
     first_name = models.CharField(max_length=30, blank=True)
