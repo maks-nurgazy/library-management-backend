@@ -1,0 +1,182 @@
+[
+{
+    "model": "library_app.library",
+    "pk": 1,
+    "fields": {
+        "name": "Kashyktap tapkan kench",
+        "image": "library/Kashyktap tapkan kench/library.png",
+        "address": "Djal"
+    }
+},
+{
+    "model": "library_app.libraryworkingtime",
+    "pk": 1,
+    "fields": {
+        "library": 1,
+        "day_of_week": 1,
+        "open_time": "09:00:00",
+        "close_time": "19:00:00"
+    }
+},
+{
+    "model": "library_app.libraryworkingtime",
+    "pk": 2,
+    "fields": {
+        "library": 1,
+        "day_of_week": 2,
+        "open_time": "09:00:00",
+        "close_time": "19:00:00"
+    }
+},
+{
+    "model": "library_app.libraryworkingtime",
+    "pk": 3,
+    "fields": {
+        "library": 1,
+        "day_of_week": 3,
+        "open_time": "09:00:00",
+        "close_time": "19:00:00"
+    }
+},
+{
+    "model": "library_app.libraryworkingtime",
+    "pk": 4,
+    "fields": {
+        "library": 1,
+        "day_of_week": 4,
+        "open_time": "09:00:00",
+        "close_time": "19:00:00"
+    }
+},
+{
+    "model": "library_app.libraryworkingtime",
+    "pk": 5,
+    "fields": {
+        "library": 1,
+        "day_of_week": 5,
+        "open_time": "09:00:00",
+        "close_time": "19:00:00"
+    }
+},
+{
+    "model": "library_app.libraryworkingtime",
+    "pk": 6,
+    "fields": {
+        "library": 1,
+        "day_of_week": 6,
+        "open_time": "09:00:00",
+        "close_time": "13:00:00"
+    }
+},
+{
+    "model": "library_app.lendperiod",
+    "pk": 1,
+    "fields": {
+        "name": "Main Lending",
+        "days_amount": 28
+    }
+},
+{
+    "model": "library_app.lendperiod",
+    "pk": 2,
+    "fields": {
+        "name": "Short Loan",
+        "days_amount": 1
+    }
+},
+{
+    "model": "library_app.lendperiod",
+    "pk": 3,
+    "fields": {
+        "name": "Week Loan",
+        "days_amount": 7
+    }
+},
+{
+    "model": "library_app.lendperiod",
+    "pk": 4,
+    "fields": {
+        "name": "Library Use",
+        "days_amount": 0
+    }
+},
+{
+    "model": "library_app.borrow",
+    "pk": 1,
+    "fields": {
+        "customer": 3,
+        "book": 2,
+        "lend_from": "2021-02-23",
+        "x_renewal": 1,
+        "created": "2021-02-23T05:07:11.013Z"
+    }
+},
+{
+    "model": "library_app.borrow",
+    "pk": 2,
+    "fields": {
+        "customer": 4,
+        "book": 7,
+        "lend_from": "2021-02-23",
+        "x_renewal": 1,
+        "created": "2021-02-23T05:07:32.884Z"
+    }
+},
+{
+    "model": "library_app.borrow",
+    "pk": 3,
+    "fields": {
+        "customer": 5,
+        "book": 1,
+        "lend_from": "2021-02-20",
+        "x_renewal": 1,
+        "created": "2021-02-23T05:07:46.173Z"
+    }
+},
+{
+    "model": "library_app.borrow",
+    "pk": 8,
+    "fields": {
+        "customer": 3,
+        "book": 2,
+        "lend_from": "2021-02-10",
+        "x_renewal": 1,
+        "created": "2021-02-23T05:51:22.818Z"
+    }
+},
+{
+    "model": "library_app.borrow",
+    "pk": 9,
+    "fields": {
+        "customer": 7,
+        "book": 2,
+        "lend_from": "2021-01-01",
+        "x_renewal": 1,
+        "created": "2021-02-23T05:51:39.924Z"
+    }
+},
+{
+    "model": "library_app.fine",
+    "pk": 1,
+    "fields": {
+        "name": "Standart",
+        "volume": 10
+    }
+},
+{
+    "model": "library_app.fine",
+    "pk": 2,
+    "fields": {
+        "name": "Week Loan",
+        "volume": 30
+    }
+},
+{
+    "model": "library_app.fine",
+    "pk": 3,
+    "fields": {
+        "name": "Short Loan",
+        "volume": 50
+    }
+}
+]

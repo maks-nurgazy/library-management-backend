@@ -1,0 +1,703 @@
+[
+  {
+    "model": "book_shelf.genre",
+    "pk": 1,
+    "fields": {
+      "name": "Biography"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 2,
+    "fields": {
+      "name": "Business"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 3,
+    "fields": {
+      "name": "Children"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 4,
+    "fields": {
+      "name": "Fantasy"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 5,
+    "fields": {
+      "name": "Fiction"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 6,
+    "fields": {
+      "name": "History"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 7,
+    "fields": {
+      "name": "Literature"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 8,
+    "fields": {
+      "name": "Mystery"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 9,
+    "fields": {
+      "name": "Religion"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 10,
+    "fields": {
+      "name": "Romance"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 11,
+    "fields": {
+      "name": "Science Fiction"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 12,
+    "fields": {
+      "name": "Technology"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 13,
+    "fields": {
+      "name": "Thriller"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 14,
+    "fields": {
+      "name": "Adventure"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 15,
+    "fields": {
+      "name": "Classics"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 16,
+    "fields": {
+      "name": "Comic book"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 17,
+    "fields": {
+      "name": "Crime"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 18,
+    "fields": {
+      "name": "Drama"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 19,
+    "fields": {
+      "name": "Fairytale"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 20,
+    "fields": {
+      "name": "Horror"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 21,
+    "fields": {
+      "name": "Poetry"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 22,
+    "fields": {
+      "name": "Satire"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 23,
+    "fields": {
+      "name": "Short Story"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 24,
+    "fields": {
+      "name": "Sport"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 25,
+    "fields": {
+      "name": "Food"
+    }
+  },
+  {
+    "model": "book_shelf.genre",
+    "pk": 26,
+    "fields": {
+      "name": "Detective"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 1,
+    "fields": {
+      "name": "English"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 2,
+    "fields": {
+      "name": "Russian"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 3,
+    "fields": {
+      "name": "Kyrgyz"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 4,
+    "fields": {
+      "name": "Uzbek"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 5,
+    "fields": {
+      "name": "Kazakh"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 6,
+    "fields": {
+      "name": "Turkish"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 7,
+    "fields": {
+      "name": "Spanish"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 8,
+    "fields": {
+      "name": "German"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 9,
+    "fields": {
+      "name": "Italian"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 10,
+    "fields": {
+      "name": "French"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 11,
+    "fields": {
+      "name": "Chinese"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 12,
+    "fields": {
+      "name": "Japanese"
+    }
+  },
+  {
+    "model": "book_shelf.language",
+    "pk": 13,
+    "fields": {
+      "name": "Arabic"
+    }
+  },
+  {
+    "model": "book_shelf.author",
+    "pk": 1,
+    "fields": {
+      "name": "William",
+      "surname": "Shakespeare",
+      "date_of_birth": "1560-02-12",
+      "date_of_death": "1590-12-20"
+    }
+  },
+  {
+    "model": "book_shelf.author",
+    "pk": 2,
+    "fields": {
+      "name": "Agatha",
+      "surname": "Christie",
+      "date_of_birth": "1864-11-30",
+      "date_of_death": "1901-01-01"
+    }
+  },
+  {
+    "model": "book_shelf.author",
+    "pk": 3,
+    "fields": {
+      "name": "Chyngyz",
+      "surname": "Aitmatov",
+      "date_of_birth": "1928-06-12",
+      "date_of_death": "2008-06-10"
+    }
+  },
+  {
+    "model": "book_shelf.author",
+    "pk": 4,
+    "fields": {
+      "name": "Aaly",
+      "surname": "Tokombaev",
+      "date_of_birth": "1903-06-25",
+      "date_of_death": "1976-01-12"
+    }
+  },
+  {
+    "model": "book_shelf.author",
+    "pk": 5,
+    "fields": {
+      "name": "Mahmud",
+      "surname": "Kashkari",
+      "date_of_birth": "1507-10-10",
+      "date_of_death": "1570-08-09"
+    }
+  },
+  {
+    "model": "book_shelf.author",
+    "pk": 6,
+    "fields": {
+      "name": "Kobo",
+      "surname": "Abe",
+      "date_of_birth": "1924-01-01",
+      "date_of_death": "1993-01-02"
+    }
+  },
+  {
+    "model": "book_shelf.author",
+    "pk": 7,
+    "fields": {
+      "name": "Francis",
+      "surname": "Scott Fitzgerald",
+      "date_of_birth": "1980-10-10",
+      "date_of_death": null
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 1,
+    "fields": {
+      "name": "Penguin Classics UK"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 2,
+    "fields": {
+      "name": "Hachette Livre"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 3,
+    "fields": {
+      "name": "Macmillan Publishers"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 4,
+    "fields": {
+      "name": "Simon & Schuster"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 5,
+    "fields": {
+      "name": "McGraw-Hill"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 6,
+    "fields": {
+      "name": "Pearson Education"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 7,
+    "fields": {
+      "name": "Scholastic"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 8,
+    "fields": {
+      "name": "Super Info"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 9,
+    "fields": {
+      "name": "AKI PRESS"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 10,
+    "fields": {
+      "name": "Tamchy"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 11,
+    "fields": {
+      "name": "Kutbilim"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 12,
+    "fields": {
+      "name": "Raritet"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 13,
+    "fields": {
+      "name": "Altyn Tamga"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 14,
+    "fields": {
+      "name": "Biznes Press"
+    }
+  },
+  {
+    "model": "book_shelf.publisher",
+    "pk": 15,
+    "fields": {
+      "name": "Zamandash"
+    }
+  },
+  {
+    "model": "book_shelf.bookformat",
+    "pk": 1,
+    "fields": {
+      "name": "Audiobook"
+    }
+  },
+  {
+    "model": "book_shelf.bookformat",
+    "pk": 2,
+    "fields": {
+      "name": "PDF"
+    }
+  },
+  {
+    "model": "book_shelf.bookformat",
+    "pk": 3,
+    "fields": {
+      "name": "Paper"
+    }
+  },
+  {
+    "model": "book_shelf.bookformat",
+    "pk": 4,
+    "fields": {
+      "name": "E-book"
+    }
+  },
+  {
+    "model": "book_shelf.book",
+    "pk": 1,
+    "fields": {
+      "title": "Jamila",
+      "summary": "The son of a struggling single mother, Jamie Conklin just wants an ordinary childhood. But Jamie is no ordinary child. Born with an unnatural ability his mom urges him to keep secret, Jamie can see what no one else can see and learn what no one else can learn. But the cost of using this ability is higher than Jamie can imagine - as he discovers when an NYPD detective draws him into the pursuit of a killer who has threatened to strike from beyond the grave",
+      "isbn": "1-59017-194-2",
+      "author": 3,
+      "publisher": 13,
+      "publish_date": 1957,
+      "page_size": 281,
+      "book_format": "Paper",
+      "lend_period": 1,
+      "genre": [
+        15,
+        18
+      ],
+      "language": [
+        5,
+        3,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "model": "book_shelf.book",
+    "pk": 2,
+    "fields": {
+      "title": "Delbirim",
+      "summary": "Klara and the Sun, the first novel by Kazuo Ishiguro since he was awarded the Nobel Prize in Literature, tells the story of Klara, an Artificial Friend with outstanding observational qualities, who, from her place in the store, watches carefully the behavior of those who come in to browse, and of those who pass on the street outside. She remains hopeful a customer will soon choose her.\r\nKlara and the Sun is a thrilling book that offers a look at our changing world through the eyes of an unforgettable narrator, and one that explores the fundamental question: what does it mean to love?",
+      "isbn": "1-59017-194-3",
+      "author": 3,
+      "publisher": 13,
+      "publish_date": 1961,
+      "page_size": 180,
+      "book_format": "Paper",
+      "lend_period": 2,
+      "genre": [
+        1,
+        18
+      ],
+      "language": [
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "model": "book_shelf.book",
+    "pk": 3,
+    "fields": {
+      "title": "Jaralangan jurok",
+      "summary": "It's the summer of 1996 and school's out forever for Andy, her boyfriend Marcus, her best friend Peter, and Em. When Andy's alcoholic mother predicts the apocalypse, the four teenagers decide to see out the end of the world at a deserted manor house, the site of a historic unsolved mystery. There they meet David�charming and unreliable, he seems to have appeared out of nowhere.\r\nDavid presents an irresistible lure for both Andy and Peter and complicates the dynamics of their lifelong friendship.",
+      "isbn": "1-59017-194-4",
+      "author": 4,
+      "publisher": 9,
+      "publish_date": 1974,
+      "page_size": 222,
+      "book_format": "Paper",
+      "lend_period": 3,
+      "genre": [
+        19,
+        4,
+        5
+      ],
+      "language": [
+        3,
+        6
+      ]
+    }
+  },
+  {
+    "model": "book_shelf.book",
+    "pk": 4,
+    "fields": {
+      "title": "The Murder of Roger Ackroyd",
+      "summary": "In King's Abbot, wealthy widow Mrs Ferrars unexpectedly commits suicide, which distresses her fianc� widower Roger Ackroyd. At dinner that evening in Ackroyd's home of Fernly Park, his guests include his sister-in-law Mrs Cecil Ackroyd and her daughter Flora, big-game hunter Major Blunt, Ackroyd's personal secretary Geoffrey Raymond, and Dr James Sheppard, whom Ackroyd invited earlier that day. During dinner, Flora announces her engagement to Ackroyd's stepson, Ralph Paton. After dinner, Ackroyd reveals to Sheppard in his study that Mrs Ferrars had confided in him that she was being blackmailed over the murder of her husband.",
+      "isbn": "0-14-118727-1",
+      "author": 2,
+      "publisher": 3,
+      "publish_date": 2013,
+      "page_size": 157,
+      "book_format": "Paper",
+      "lend_period": 1,
+      "genre": [
+        26,
+        5
+      ],
+      "language": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "book_shelf.book",
+    "pk": 5,
+    "fields": {
+      "title": "Hamlet",
+      "summary": "Among Shakespeare's plays, \"Hamlet\" is considered by many his masterpiece. Among actors, the role of Hamlet, Prince of Denmark, is considered the jewel in the crown of a triumphant theatrical career. Now Kenneth Branagh plays the leading role and co-directs a brillant ensemble performance. Three generations of legendary leading actors, many of whom first assembled for the Oscar-winning film \"Henry V\", gather here to perform the rarely heard complete version of the play. This clear, subtly nuanced, stunning dramatization, presented by The Renaissance Theatre Company in association with \"Bbc\" Broadcasting, features such luminaries as Sir John Gielgud, Derek Jacobi, Emma Thompson and Christopher Ravenscroft. It combines a full cast with stirring music and sound effects to bring this magnificent Shakespearen classic vividly to life. Revealing new riches with each listening, this production of \"Hamlet\" is an invaluable aid for students, teachers and all true lovers of Shakespeare - a recording to be treasured for decades to come",
+      "isbn": "1-59017-194-5",
+      "author": 1,
+      "publisher": 1,
+      "publish_date": 1767,
+      "page_size": 489,
+      "book_format": "Paper",
+      "lend_period": 1,
+      "genre": [
+        6,
+        7
+      ],
+      "language": [
+        1,
+        10,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "book_shelf.book",
+    "pk": 6,
+    "fields": {
+      "title": "Romeo and Juliet",
+      "summary": "In Romeo and Juliet, Shakespeare creates a violent world, in which two young people fall in love. It is not simply that their families disapprove; the Montagues and the Capulets are engaged in a blood feud.\r\n\r\nIn this death-filled setting, the movement from love at first sight to the lovers� final union in death seems almost inevitable. And yet, this play set in an extraordinary world has become the quintessential story of young love. In part because of its exquisite language, it is easy to respond as if it were about all young lovers",
+      "isbn": "1-59017-194-9",
+      "author": 1,
+      "publisher": 5,
+      "publish_date": 1788,
+      "page_size": 321,
+      "book_format": "Paper",
+      "lend_period": 4,
+      "genre": [
+        15,
+        18,
+        19,
+        7
+      ],
+      "language": [
+        13,
+        1,
+        8,
+        6
+      ]
+    }
+  },
+  {
+    "model": "book_shelf.book",
+    "pk": 7,
+    "fields": {
+      "title": "King Lear",
+      "summary": "King Lear challenges us with the magnitude, intensity, and sheer duration of the pain that it represents. Its figures harden their hearts, engage in violence, or try to alleviate the suffering of others. Lear himself rages until his sanity cracks. What, then, keeps bringing us back to King Lear? For all the force of its language, King Lear is almost equally powerful when translated, suggesting that it is the story, in large part, that draws us to the play.\r\n\r\nThe play tells us about families struggling between greed and cruelty, on the one hand, and support and consolation, on the other. Emotions are extreme, magnified to gigantic proportions. We also see old age portrayed in all its vulnerability, pride, and, perhaps, wisdom�one reason this most devastating of Shakespeare�s tragedies is also perhaps his most moving",
+      "isbn": "2-59017-194-3",
+      "author": 5,
+      "publisher": 8,
+      "publish_date": 1876,
+      "page_size": 211,
+      "book_format": "Paper",
+      "lend_period": 4,
+      "genre": [
+        13
+      ],
+      "language": [
+        11
+      ]
+    }
+  },
+  {
+    "model": "book_shelf.book",
+    "pk": 8,
+    "fields": {
+      "title": "Julius Caesar",
+      "summary": "The Oxford School Shakespeare has become the preferred introduction to the literary legacy of the greatest playwright in the English language. This exclusive collection of the Bard's best works has been designed specifically for readers new to Shakespeare's rich literary legacy. Each play is presented complete and unabridged, in large print. Every book is well illustrated",
+      "isbn": "2-59017-194-4",
+      "author": 6,
+      "publisher": 4,
+      "publish_date": 2010,
+      "page_size": 450,
+      "book_format": "Paper",
+      "lend_period": 1,
+      "genre": [
+        9,
+        10,
+        22,
+        11,
+        23,
+        24,
+        12,
+        13
+      ],
+      "language": [
+        13,
+        11,
+        1,
+        10,
+        8,
+        9,
+        12
+      ]
+    }
+  },
+  {
+    "model": "book_shelf.book",
+    "pk": 9,
+    "fields": {
+      "title": "The Great Gatsby",
+      "summary": "In the spring of 1922, Nick takes a house in the fictional village of West Egg on Long Island, where he finds himself living among the colossal mansions of the newly rich. Across the water in the more refined village of East Egg live his cousin Daisy and her brutish, absurdly wealthy husband Tom Buchanan. Early in the summer Nick goes over to their house for dinner, where he also meets Jordan Baker, a friend of Daisy�s and a well-known golf champion, who tells him that Tom has a mistress in New York City",
+      "isbn": "9780743273565",
+      "author": 7,
+      "publisher": 12,
+      "publish_date": 2010,
+      "page_size": 40,
+      "book_format": "PDF",
+      "lend_period": 3,
+      "genre": [
+        26,
+        6
+      ],
+      "language": [
+        1,
+        10,
+        3
+      ]
+    }
+  }
+]

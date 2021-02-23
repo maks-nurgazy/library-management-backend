@@ -1,0 +1,3133 @@
+[
+{
+  "model": "sessions.session",
+  "pk": "iiz7vhpr7g9mefvfpjjnj9jh7z9j0h5k",
+  "fields": {
+    "session_data": ".eJxVjDsOwyAQBe9CHSHj5WNSpvcZrIVdgpMIJGNXUe4eIblI2jcz7y0WPPa8HI23ZSVxFUpcfreA8cmlA3pguVcZa9m3NciuyJM2OVfi1-10_w4yttzr5HWy3kYD2jOrNAwmOmCLPgEE7xS5kVgZRDNxCBonit5YBAs8RhKfL-9vOHU:1lE8Ig:CxKYkIqaDhhlkZIrhcIrWIm0lDT6sBl_a-D1nTYRvms",
+    "expire_date": "2021-03-08T10:18:46.121Z"
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "last_login": "2021-02-22T10:18:46.045Z",
+    "is_superuser": true,
+    "email": "admin@test.com",
+    "password": "pbkdf2_sha256$216000$pqvyYOKlLpUM$XK9D5oscCCwHRsO4Cv57Le0JjXfZCgwPJ0ahBOKhcxo=",
+    "first_name": "admin",
+    "last_name": "admin",
+    "role": "ADMIN",
+    "is_active": true,
+    "is_staff": true,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "last_login": null,
+    "is_superuser": false,
+    "email": "cristiano@test.com",
+    "password": "pbkdf2_sha256$216000$F1Lb5uTsBgmL$+TKpAT+zA803r3UO+X2MvyOFTTWrV7ShugotoCbqTJc=",
+    "first_name": "Cristiano",
+    "last_name": "Ronaldo",
+    "role": "CUSTOMER",
+    "is_active": true,
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "last_login": null,
+    "is_superuser": false,
+    "email": "lionel@test.com",
+    "password": "pbkdf2_sha256$216000$ZrIW3jMhDpJL$D6NNX4Xb/2Z2+oqtDd7McQHDM9aHk/Dn9xY2FnVszQM=",
+    "first_name": "Messi",
+    "last_name": "Lionel",
+    "role": "CUSTOMER",
+    "is_active": true,
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "last_login": null,
+    "is_superuser": false,
+    "email": "junior@test.com",
+    "password": "pbkdf2_sha256$216000$XsByyG5Ozeyg$LN6axr75yeLTwRLH7FJK7WeGnEgGK8QRfliyjO72xwE=",
+    "first_name": "Neymar",
+    "last_name": "Junior",
+    "role": "CUSTOMER",
+    "is_active": true,
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "last_login": null,
+    "is_superuser": false,
+    "email": "kasillas@test.com",
+    "password": "pbkdf2_sha256$216000$sExvwL2Ru9Mj$6Z+3voMSOjj95kkBsmSzEuX9fwdnulq5xOs+tl3DDig=",
+    "first_name": "Iker",
+    "last_name": "Kasillas",
+    "role": "CUSTOMER",
+    "is_active": true,
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "last_login": null,
+    "is_superuser": false,
+    "email": "rooney@test.com",
+    "password": "pbkdf2_sha256$216000$l0dAC9NHNKJg$1L0Hd55ZmSvMH5UQ6VVzs5JUIL3HKDSM5q9VvfUM+dI=",
+    "first_name": "Wayne",
+    "last_name": "Rooney",
+    "role": "CUSTOMER",
+    "is_active": true,
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "last_login": null,
+    "is_superuser": false,
+    "email": "ainil@test.com",
+    "password": "pbkdf2_sha256$216000$45xw0073WN4B$0c55LxKKPhouZqTYTMhjUWhlfOj5n0QNn5jRGDN+PKQ=",
+    "first_name": "Ainil",
+    "last_name": "Kemelova",
+    "role": "LIBRARIAN",
+    "is_active": true,
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "last_login": null,
+    "is_superuser": false,
+    "email": "aigerim@test.com",
+    "password": "pbkdf2_sha256$216000$nKMg2VNRt6M3$vw1PnWY1vtAvqWldF/HFvmxG9VM78Io/r9oYbhXT6gc=",
+    "first_name": "Aigerim",
+    "last_name": "Maisalbekova",
+    "role": "LIBRARIAN",
+    "is_active": true,
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "last_login": null,
+    "is_superuser": true,
+    "email": "testadmin@test.com",
+    "password": "pbkdf2_sha256$216000$Q5p0Ow6PiWCU$kR2EQxQnCStaexGIoD0AeU9x3CXdvuLCb2DlyYLThfA=",
+    "first_name": "",
+    "last_name": "",
+    "role": "ADMIN",
+    "is_active": true,
+    "is_staff": true,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "library_app.library",
+  "pk": 1,
+  "fields": {
+    "name": "Kashyktap tapkan kench",
+    "image": "library/Kashyktap tapkan kench/library.png",
+    "address": "Djal"
+  }
+},
+{
+  "model": "library_app.libraryworkingtime",
+  "pk": 1,
+  "fields": {
+    "library": 1,
+    "day_of_week": 1,
+    "open_time": "09:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "library_app.libraryworkingtime",
+  "pk": 2,
+  "fields": {
+    "library": 1,
+    "day_of_week": 2,
+    "open_time": "09:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "library_app.libraryworkingtime",
+  "pk": 3,
+  "fields": {
+    "library": 1,
+    "day_of_week": 3,
+    "open_time": "09:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "library_app.libraryworkingtime",
+  "pk": 4,
+  "fields": {
+    "library": 1,
+    "day_of_week": 4,
+    "open_time": "09:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "library_app.libraryworkingtime",
+  "pk": 5,
+  "fields": {
+    "library": 1,
+    "day_of_week": 5,
+    "open_time": "09:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "library_app.libraryworkingtime",
+  "pk": 6,
+  "fields": {
+    "library": 1,
+    "day_of_week": 6,
+    "open_time": "09:00:00",
+    "close_time": "13:00:00"
+  }
+},
+{
+  "model": "library_app.lendperiod",
+  "pk": 1,
+  "fields": {
+    "name": "Main Lending",
+    "days_amount": 28
+  }
+},
+{
+  "model": "library_app.lendperiod",
+  "pk": 2,
+  "fields": {
+    "name": "Short Loan",
+    "days_amount": 1
+  }
+},
+{
+  "model": "library_app.lendperiod",
+  "pk": 3,
+  "fields": {
+    "name": "Week Loan",
+    "days_amount": 7
+  }
+},
+{
+  "model": "library_app.lendperiod",
+  "pk": 4,
+  "fields": {
+    "name": "Library Use",
+    "days_amount": 0
+  }
+},
+{
+  "model": "library_app.borrow",
+  "pk": 1,
+  "fields": {
+    "customer": [
+      "cristiano@test.com"
+    ],
+    "book": 2,
+    "lend_from": "2021-02-23",
+    "x_renewal": 1,
+    "created": "2021-02-23T05:07:11.013Z"
+  }
+},
+{
+  "model": "library_app.borrow",
+  "pk": 2,
+  "fields": {
+    "customer": [
+      "lionel@test.com"
+    ],
+    "book": 7,
+    "lend_from": "2021-02-23",
+    "x_renewal": 1,
+    "created": "2021-02-23T05:07:32.884Z"
+  }
+},
+{
+  "model": "library_app.borrow",
+  "pk": 3,
+  "fields": {
+    "customer": [
+      "junior@test.com"
+    ],
+    "book": 1,
+    "lend_from": "2021-02-20",
+    "x_renewal": 1,
+    "created": "2021-02-23T05:07:46.173Z"
+  }
+},
+{
+  "model": "library_app.borrow",
+  "pk": 8,
+  "fields": {
+    "customer": [
+      "cristiano@test.com"
+    ],
+    "book": 2,
+    "lend_from": "2021-02-10",
+    "x_renewal": 1,
+    "created": "2021-02-23T05:51:22.818Z"
+  }
+},
+{
+  "model": "library_app.borrow",
+  "pk": 9,
+  "fields": {
+    "customer": [
+      "rooney@test.com"
+    ],
+    "book": 2,
+    "lend_from": "2021-01-01",
+    "x_renewal": 1,
+    "created": "2021-02-23T05:51:39.924Z"
+  }
+},
+{
+  "model": "library_app.fine",
+  "pk": 1,
+  "fields": {
+    "name": "Standart",
+    "volume": 10
+  }
+},
+{
+  "model": "library_app.fine",
+  "pk": 2,
+  "fields": {
+    "name": "Week Loan",
+    "volume": 30
+  }
+},
+{
+  "model": "library_app.fine",
+  "pk": 3,
+  "fields": {
+    "name": "Short Loan",
+    "volume": 50
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 1,
+  "fields": {
+    "name": "Biography"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 2,
+  "fields": {
+    "name": "Business"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 3,
+  "fields": {
+    "name": "Children"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 4,
+  "fields": {
+    "name": "Fantasy"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 5,
+  "fields": {
+    "name": "Fiction"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 6,
+  "fields": {
+    "name": "History"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 7,
+  "fields": {
+    "name": "Literature"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 8,
+  "fields": {
+    "name": "Mystery"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 9,
+  "fields": {
+    "name": "Religion"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 10,
+  "fields": {
+    "name": "Romance"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 11,
+  "fields": {
+    "name": "Science Fiction"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 12,
+  "fields": {
+    "name": "Technology"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 13,
+  "fields": {
+    "name": "Thriller"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 14,
+  "fields": {
+    "name": "Adventure"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 15,
+  "fields": {
+    "name": "Classics"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 16,
+  "fields": {
+    "name": "Comic book"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 17,
+  "fields": {
+    "name": "Crime"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 18,
+  "fields": {
+    "name": "Drama"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 19,
+  "fields": {
+    "name": "Fairytale"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 20,
+  "fields": {
+    "name": "Horror"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 21,
+  "fields": {
+    "name": "Poetry"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 22,
+  "fields": {
+    "name": "Satire"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 23,
+  "fields": {
+    "name": "Short Story"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 24,
+  "fields": {
+    "name": "Sport"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 25,
+  "fields": {
+    "name": "Food"
+  }
+},
+{
+  "model": "book_shelf.genre",
+  "pk": 26,
+  "fields": {
+    "name": "Detective"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 1,
+  "fields": {
+    "name": "English"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 2,
+  "fields": {
+    "name": "Russian"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 3,
+  "fields": {
+    "name": "Kyrgyz"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 4,
+  "fields": {
+    "name": "Uzbek"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 5,
+  "fields": {
+    "name": "Kazakh"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 6,
+  "fields": {
+    "name": "Turkish"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 7,
+  "fields": {
+    "name": "Spanish"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 8,
+  "fields": {
+    "name": "German"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 9,
+  "fields": {
+    "name": "Italian"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 10,
+  "fields": {
+    "name": "French"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 11,
+  "fields": {
+    "name": "Chinese"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 12,
+  "fields": {
+    "name": "Japanese"
+  }
+},
+{
+  "model": "book_shelf.language",
+  "pk": 13,
+  "fields": {
+    "name": "Arabic"
+  }
+},
+{
+  "model": "book_shelf.author",
+  "pk": 1,
+  "fields": {
+    "name": "William",
+    "surname": "Shakespeare",
+    "date_of_birth": "1560-02-12",
+    "date_of_death": "1590-12-20"
+  }
+},
+{
+  "model": "book_shelf.author",
+  "pk": 2,
+  "fields": {
+    "name": "Agatha",
+    "surname": "Christie",
+    "date_of_birth": "1864-11-30",
+    "date_of_death": "1901-01-01"
+  }
+},
+{
+  "model": "book_shelf.author",
+  "pk": 3,
+  "fields": {
+    "name": "Chyngyz",
+    "surname": "Aitmatov",
+    "date_of_birth": "1928-06-12",
+    "date_of_death": "2008-06-10"
+  }
+},
+{
+  "model": "book_shelf.author",
+  "pk": 4,
+  "fields": {
+    "name": "Aaly",
+    "surname": "Tokombaev",
+    "date_of_birth": "1903-06-25",
+    "date_of_death": "1976-01-12"
+  }
+},
+{
+  "model": "book_shelf.author",
+  "pk": 5,
+  "fields": {
+    "name": "Mahmud",
+    "surname": "Kashkari",
+    "date_of_birth": "1507-10-10",
+    "date_of_death": "1570-08-09"
+  }
+},
+{
+  "model": "book_shelf.author",
+  "pk": 6,
+  "fields": {
+    "name": "Kobo",
+    "surname": "Abe",
+    "date_of_birth": "1924-01-01",
+    "date_of_death": "1993-01-02"
+  }
+},
+{
+  "model": "book_shelf.author",
+  "pk": 7,
+  "fields": {
+    "name": "Francis",
+    "surname": "Scott Fitzgerald",
+    "date_of_birth": "1980-10-10",
+    "date_of_death": null
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 1,
+  "fields": {
+    "name": "Penguin Classics UK"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 2,
+  "fields": {
+    "name": "Hachette Livre"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 3,
+  "fields": {
+    "name": "Macmillan Publishers"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 4,
+  "fields": {
+    "name": "Simon & Schuster"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 5,
+  "fields": {
+    "name": "McGraw-Hill"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 6,
+  "fields": {
+    "name": "Pearson Education"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 7,
+  "fields": {
+    "name": "Scholastic"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 8,
+  "fields": {
+    "name": "Super Info"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 9,
+  "fields": {
+    "name": "AKI PRESS"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 10,
+  "fields": {
+    "name": "Tamchy"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 11,
+  "fields": {
+    "name": "Kutbilim"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 12,
+  "fields": {
+    "name": "Raritet"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 13,
+  "fields": {
+    "name": "Altyn Tamga"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 14,
+  "fields": {
+    "name": "Biznes Press"
+  }
+},
+{
+  "model": "book_shelf.publisher",
+  "pk": 15,
+  "fields": {
+    "name": "Zamandash"
+  }
+},
+{
+  "model": "book_shelf.bookformat",
+  "pk": 1,
+  "fields": {
+    "name": "Audiobook"
+  }
+},
+{
+  "model": "book_shelf.bookformat",
+  "pk": 2,
+  "fields": {
+    "name": "PDF"
+  }
+},
+{
+  "model": "book_shelf.bookformat",
+  "pk": 3,
+  "fields": {
+    "name": "Paper"
+  }
+},
+{
+  "model": "book_shelf.bookformat",
+  "pk": 4,
+  "fields": {
+    "name": "E-book"
+  }
+},
+{
+  "model": "book_shelf.book",
+  "pk": 1,
+  "fields": {
+    "title": "Jamila",
+    "summary": "The son of a struggling single mother, Jamie Conklin just wants an ordinary childhood. But Jamie is no ordinary child. Born with an unnatural ability his mom urges him to keep secret, Jamie can see what no one else can see and learn what no one else can learn. But the cost of using this ability is higher than Jamie can imagine - as he discovers when an NYPD detective draws him into the pursuit of a killer who has threatened to strike from beyond the grave",
+    "isbn": "1-59017-194-2",
+    "author": 3,
+    "publisher": 13,
+    "publish_date": 1957,
+    "page_size": 281,
+    "book_format": "Paper",
+    "lend_period": 1,
+    "genre": [
+      15,
+      18
+    ],
+    "language": [
+      5,
+      3,
+      2,
+      4
+    ]
+  }
+},
+{
+  "model": "book_shelf.book",
+  "pk": 2,
+  "fields": {
+    "title": "Delbirim",
+    "summary": "Klara and the Sun, the first novel by Kazuo Ishiguro since he was awarded the Nobel Prize in Literature, tells the story of Klara, an Artificial Friend with outstanding observational qualities, who, from her place in the store, watches carefully the behavior of those who come in to browse, and of those who pass on the street outside. She remains hopeful a customer will soon choose her.\r\nKlara and the Sun is a thrilling book that offers a look at our changing world through the eyes of an unforgettable narrator, and one that explores the fundamental question: what does it mean to love?",
+    "isbn": "1-59017-194-3",
+    "author": 3,
+    "publisher": 13,
+    "publish_date": 1961,
+    "page_size": 180,
+    "book_format": "Paper",
+    "lend_period": 2,
+    "genre": [
+      1,
+      18
+    ],
+    "language": [
+      3,
+      2
+    ]
+  }
+},
+{
+  "model": "book_shelf.book",
+  "pk": 3,
+  "fields": {
+    "title": "Jaralangan jurok",
+    "summary": "It's the summer of 1996 and school's out forever for Andy, her boyfriend Marcus, her best friend Peter, and Em. When Andy's alcoholic mother predicts the apocalypse, the four teenagers decide to see out the end of the world at a deserted manor house, the site of a historic unsolved mystery. There they meet David—charming and unreliable, he seems to have appeared out of nowhere.\r\nDavid presents an irresistible lure for both Andy and Peter and complicates the dynamics of their lifelong friendship.",
+    "isbn": "1-59017-194-4",
+    "author": 4,
+    "publisher": 9,
+    "publish_date": 1974,
+    "page_size": 222,
+    "book_format": "Paper",
+    "lend_period": 3,
+    "genre": [
+      19,
+      4,
+      5
+    ],
+    "language": [
+      3,
+      6
+    ]
+  }
+},
+{
+  "model": "book_shelf.book",
+  "pk": 4,
+  "fields": {
+    "title": "The Murder of Roger Ackroyd",
+    "summary": "In King's Abbot, wealthy widow Mrs Ferrars unexpectedly commits suicide, which distresses her fiancé widower Roger Ackroyd. At dinner that evening in Ackroyd's home of Fernly Park, his guests include his sister-in-law Mrs Cecil Ackroyd and her daughter Flora, big-game hunter Major Blunt, Ackroyd's personal secretary Geoffrey Raymond, and Dr James Sheppard, whom Ackroyd invited earlier that day. During dinner, Flora announces her engagement to Ackroyd's stepson, Ralph Paton. After dinner, Ackroyd reveals to Sheppard in his study that Mrs Ferrars had confided in him that she was being blackmailed over the murder of her husband.",
+    "isbn": "0-14-118727-1",
+    "author": 2,
+    "publisher": 3,
+    "publish_date": 2013,
+    "page_size": 157,
+    "book_format": "Paper",
+    "lend_period": 1,
+    "genre": [
+      26,
+      5
+    ],
+    "language": [
+      1
+    ]
+  }
+},
+{
+  "model": "book_shelf.book",
+  "pk": 5,
+  "fields": {
+    "title": "Hamlet",
+    "summary": "Among Shakespeare's plays, \"Hamlet\" is considered by many his masterpiece. Among actors, the role of Hamlet, Prince of Denmark, is considered the jewel in the crown of a triumphant theatrical career. Now Kenneth Branagh plays the leading role and co-directs a brillant ensemble performance. Three generations of legendary leading actors, many of whom first assembled for the Oscar-winning film \"Henry V\", gather here to perform the rarely heard complete version of the play. This clear, subtly nuanced, stunning dramatization, presented by The Renaissance Theatre Company in association with \"Bbc\" Broadcasting, features such luminaries as Sir John Gielgud, Derek Jacobi, Emma Thompson and Christopher Ravenscroft. It combines a full cast with stirring music and sound effects to bring this magnificent Shakespearen classic vividly to life. Revealing new riches with each listening, this production of \"Hamlet\" is an invaluable aid for students, teachers and all true lovers of Shakespeare - a recording to be treasured for decades to come",
+    "isbn": "1-59017-194-5",
+    "author": 1,
+    "publisher": 1,
+    "publish_date": 1767,
+    "page_size": 489,
+    "book_format": "Paper",
+    "lend_period": 1,
+    "genre": [
+      6,
+      7
+    ],
+    "language": [
+      1,
+      10,
+      8,
+      9
+    ]
+  }
+},
+{
+  "model": "book_shelf.book",
+  "pk": 6,
+  "fields": {
+    "title": "Romeo and Juliet",
+    "summary": "In Romeo and Juliet, Shakespeare creates a violent world, in which two young people fall in love. It is not simply that their families disapprove; the Montagues and the Capulets are engaged in a blood feud.\r\n\r\nIn this death-filled setting, the movement from love at first sight to the lovers’ final union in death seems almost inevitable. And yet, this play set in an extraordinary world has become the quintessential story of young love. In part because of its exquisite language, it is easy to respond as if it were about all young lovers",
+    "isbn": "1-59017-194-9",
+    "author": 1,
+    "publisher": 5,
+    "publish_date": 1788,
+    "page_size": 321,
+    "book_format": "Paper",
+    "lend_period": 4,
+    "genre": [
+      15,
+      18,
+      19,
+      7
+    ],
+    "language": [
+      13,
+      1,
+      8,
+      6
+    ]
+  }
+},
+{
+  "model": "book_shelf.book",
+  "pk": 7,
+  "fields": {
+    "title": "King Lear",
+    "summary": "King Lear challenges us with the magnitude, intensity, and sheer duration of the pain that it represents. Its figures harden their hearts, engage in violence, or try to alleviate the suffering of others. Lear himself rages until his sanity cracks. What, then, keeps bringing us back to King Lear? For all the force of its language, King Lear is almost equally powerful when translated, suggesting that it is the story, in large part, that draws us to the play.\r\n\r\nThe play tells us about families struggling between greed and cruelty, on the one hand, and support and consolation, on the other. Emotions are extreme, magnified to gigantic proportions. We also see old age portrayed in all its vulnerability, pride, and, perhaps, wisdom—one reason this most devastating of Shakespeare’s tragedies is also perhaps his most moving",
+    "isbn": "2-59017-194-3",
+    "author": 5,
+    "publisher": 8,
+    "publish_date": 1876,
+    "page_size": 211,
+    "book_format": "Paper",
+    "lend_period": 4,
+    "genre": [
+      13
+    ],
+    "language": [
+      11
+    ]
+  }
+},
+{
+  "model": "book_shelf.book",
+  "pk": 8,
+  "fields": {
+    "title": "Julius Caesar",
+    "summary": "The Oxford School Shakespeare has become the preferred introduction to the literary legacy of the greatest playwright in the English language. This exclusive collection of the Bard's best works has been designed specifically for readers new to Shakespeare's rich literary legacy. Each play is presented complete and unabridged, in large print. Every book is well illustrated",
+    "isbn": "2-59017-194-4",
+    "author": 6,
+    "publisher": 4,
+    "publish_date": 2010,
+    "page_size": 450,
+    "book_format": "Paper",
+    "lend_period": 1,
+    "genre": [
+      9,
+      10,
+      22,
+      11,
+      23,
+      24,
+      12,
+      13
+    ],
+    "language": [
+      13,
+      11,
+      1,
+      10,
+      8,
+      9,
+      12
+    ]
+  }
+},
+{
+  "model": "book_shelf.book",
+  "pk": 9,
+  "fields": {
+    "title": "The Great Gatsby",
+    "summary": "The Great Gatsby, F. Scott Fitzgerald's third book, stands as the supreme achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by generations of readers. The story is of the fabulously wealthy Jay Gatsby and his new love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted \"gin was the national drink and sex the national obsession,\" it is an exquisitely crafted tale of America in the 1920s.\r\n\r\nThe Great Gatsby is one of the great classics of twentieth-century literature.",
+    "isbn": "9780743273565",
+    "author": 7,
+    "publisher": 12,
+    "publish_date": 2010,
+    "page_size": 40,
+    "book_format": "PDF",
+    "lend_period": 3,
+    "genre": [
+      26,
+      6
+    ],
+    "language": [
+      1,
+      10,
+      3
+    ]
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2021-02-22T11:25:12.986Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "1",
+    "object_repr": "Biography",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2021-02-22T11:25:24.768Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "2",
+    "object_repr": "Business",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2021-02-22T11:25:30.794Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "3",
+    "object_repr": "Children",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2021-02-22T11:25:35.506Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "4",
+    "object_repr": "Fantasy",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2021-02-22T11:25:40.752Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "5",
+    "object_repr": "Fiction",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2021-02-22T11:25:46.158Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "6",
+    "object_repr": "History",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2021-02-22T11:25:52.045Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "7",
+    "object_repr": "Literature",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2021-02-22T11:25:56.960Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "8",
+    "object_repr": "Mystery",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2021-02-22T11:26:04.861Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "9",
+    "object_repr": "Religion",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2021-02-22T11:26:09.827Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "10",
+    "object_repr": "Romance",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2021-02-22T11:26:16.993Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "11",
+    "object_repr": "Science Fiction",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2021-02-22T11:26:23.116Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "12",
+    "object_repr": "Technology",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2021-02-22T11:26:28.020Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "13",
+    "object_repr": "Thriller",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2021-02-22T11:27:27.865Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "14",
+    "object_repr": "Adventure",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2021-02-22T11:27:34.514Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "15",
+    "object_repr": "Classics",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2021-02-22T11:27:40.228Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "16",
+    "object_repr": "Comic book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2021-02-22T11:27:45.659Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "17",
+    "object_repr": "Crime",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2021-02-22T11:27:53.095Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "18",
+    "object_repr": "Drama",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2021-02-22T11:28:01.500Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "19",
+    "object_repr": "Fairytale",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2021-02-22T11:28:17.916Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "20",
+    "object_repr": "Horror",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2021-02-22T11:28:27.001Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "21",
+    "object_repr": "Poetry",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2021-02-22T11:28:35.785Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "22",
+    "object_repr": "Satire",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2021-02-22T11:28:43.028Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "23",
+    "object_repr": "Short Story",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2021-02-22T11:28:53.308Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "24",
+    "object_repr": "Sport",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2021-02-22T11:29:13.107Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "25",
+    "object_repr": "Food",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2021-02-22T11:29:37.663Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "1",
+    "object_repr": "English",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2021-02-22T11:29:41.132Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "2",
+    "object_repr": "Russian",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2021-02-22T11:29:50.104Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "3",
+    "object_repr": "Kyrgyz",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2021-02-22T11:29:55.062Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "4",
+    "object_repr": "Uzbek",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2021-02-22T11:30:01.018Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "5",
+    "object_repr": "Kazakh",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2021-02-22T11:30:06.091Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "6",
+    "object_repr": "Turkish",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2021-02-22T11:31:10.467Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "7",
+    "object_repr": "Spanish",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2021-02-22T11:31:16.970Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "8",
+    "object_repr": "German",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2021-02-22T11:31:21.465Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "9",
+    "object_repr": "Italian",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2021-02-22T11:31:26.553Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "10",
+    "object_repr": "French",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2021-02-22T11:31:34.937Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "11",
+    "object_repr": "Chinese",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2021-02-22T11:31:39.659Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "12",
+    "object_repr": "Japanese",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2021-02-22T11:31:54.657Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "language"
+    ],
+    "object_id": "13",
+    "object_repr": "Arabic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2021-02-22T11:33:10.352Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "1",
+    "object_repr": "Publisher: Penguin Classics UK",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2021-02-22T11:33:27.827Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "2",
+    "object_repr": "Publisher: Hachette Livre",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2021-02-22T11:33:42.588Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "3",
+    "object_repr": "Publisher: Macmillan Publishers",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2021-02-22T11:33:58.038Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "4",
+    "object_repr": "Publisher: Simon & Schuster",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2021-02-22T11:34:12.512Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "5",
+    "object_repr": "Publisher: McGraw-Hill",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2021-02-22T11:34:26.732Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "6",
+    "object_repr": "Publisher: Pearson Education",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2021-02-22T11:34:33.045Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "7",
+    "object_repr": "Publisher: Scholastic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2021-02-22T11:38:07.987Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "8",
+    "object_repr": "Publisher: Super Info",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2021-02-22T11:38:28.168Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "9",
+    "object_repr": "Publisher: AKI PRESS",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2021-02-22T11:38:38.945Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "10",
+    "object_repr": "Publisher: Tamchy",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2021-02-22T11:38:47.546Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "11",
+    "object_repr": "Publisher: Kutbilim",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2021-02-22T11:38:57.845Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "12",
+    "object_repr": "Publisher: Raritet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2021-02-22T11:39:11.996Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "13",
+    "object_repr": "Publisher: Altyn Tamga",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2021-02-22T11:39:28.603Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "14",
+    "object_repr": "Publisher: Biznes Press",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2021-02-22T11:39:47.641Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "publisher"
+    ],
+    "object_id": "15",
+    "object_repr": "Publisher: Zamandash",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2021-02-22T11:41:07.546Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "bookformat"
+    ],
+    "object_id": "1",
+    "object_repr": "BookFormat object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2021-02-22T11:41:12.014Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "bookformat"
+    ],
+    "object_id": "2",
+    "object_repr": "BookFormat object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2021-02-22T11:41:23.664Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "bookformat"
+    ],
+    "object_id": "3",
+    "object_repr": "BookFormat object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2021-02-22T11:41:28.805Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "bookformat"
+    ],
+    "object_id": "4",
+    "object_repr": "BookFormat object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2021-02-22T11:43:48.408Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "author"
+    ],
+    "object_id": "1",
+    "object_repr": "Author: William Shakespeare",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2021-02-22T11:44:27.000Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "author"
+    ],
+    "object_id": "2",
+    "object_repr": "Author: Agatha Christie",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2021-02-22T11:44:50.393Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "author"
+    ],
+    "object_id": "3",
+    "object_repr": "Author: Chyngyz Aitmatov",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2021-02-22T11:45:13.660Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "author"
+    ],
+    "object_id": "4",
+    "object_repr": "Author: Aaly Tokombaev",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2021-02-22T11:46:10.295Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "author"
+    ],
+    "object_id": "5",
+    "object_repr": "Author: Mahmud Kashkari",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2021-02-22T11:47:46.518Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "author"
+    ],
+    "object_id": "6",
+    "object_repr": "Author: Kobo Abe",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2021-02-22T11:53:13.783Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "lendperiod"
+    ],
+    "object_id": "1",
+    "object_repr": "Main Lending",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2021-02-22T11:53:35.824Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "lendperiod"
+    ],
+    "object_id": "2",
+    "object_repr": "Short Loan",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2021-02-22T11:53:48.900Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "lendperiod"
+    ],
+    "object_id": "3",
+    "object_repr": "Week Loan",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2021-02-22T11:54:16.451Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "lendperiod"
+    ],
+    "object_id": "4",
+    "object_repr": "Library Use",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2021-02-22T11:55:13.342Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "1",
+    "object_repr": "Jamila",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2021-02-22T11:57:28.293Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "2",
+    "object_repr": "Delbirim",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2021-02-22T12:00:21.932Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "3",
+    "object_repr": "Jaralangan jurok",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2021-02-22T12:01:46.307Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "genre"
+    ],
+    "object_id": "26",
+    "object_repr": "Detective",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2021-02-22T12:02:43.716Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "4",
+    "object_repr": "The Murder of Roger Ackroyd",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2021-02-22T12:05:33.344Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "5",
+    "object_repr": "Hamlet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2021-02-22T12:07:35.909Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "6",
+    "object_repr": "Romeo and Juliet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2021-02-22T12:09:55.192Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "7",
+    "object_repr": "King Lear",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2021-02-22T12:11:38.764Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "8",
+    "object_repr": "Julius Caesar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2021-02-22T12:13:42.144Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "author"
+    ],
+    "object_id": "7",
+    "object_repr": "Author: Francis Scott Fitzgerald",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2021-02-22T12:15:05.816Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "9",
+    "object_repr": "The Great Gatsby",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2021-02-22T22:47:19.865Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "library"
+    ],
+    "object_id": "1",
+    "object_repr": "Kashyktap tapkan kench",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2021-02-22T22:49:11.563Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "libraryworkingtime"
+    ],
+    "object_id": "1",
+    "object_repr": "LibraryWorkingTime object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2021-02-22T22:53:18.005Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "libraryworkingtime"
+    ],
+    "object_id": "2",
+    "object_repr": "2 day 9 to 19",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2021-02-22T22:53:29.000Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "libraryworkingtime"
+    ],
+    "object_id": "3",
+    "object_repr": "3 day 9 to 19",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2021-02-22T22:53:50.174Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "libraryworkingtime"
+    ],
+    "object_id": "4",
+    "object_repr": "4 day 9 to 19",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2021-02-22T22:54:00.556Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "libraryworkingtime"
+    ],
+    "object_id": "5",
+    "object_repr": "5 day 9 to 19",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2021-02-22T22:54:32.250Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "libraryworkingtime"
+    ],
+    "object_id": "6",
+    "object_repr": "6 day 9 to 13",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2021-02-22T22:56:56.875Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "users",
+      "customer"
+    ],
+    "object_id": "3",
+    "object_repr": "cristiano@test.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2021-02-22T22:57:22.519Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "users",
+      "customer"
+    ],
+    "object_id": "4",
+    "object_repr": "lionel@test.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2021-02-22T22:58:25.417Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "users",
+      "customer"
+    ],
+    "object_id": "5",
+    "object_repr": "junior@test.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2021-02-22T22:59:14.314Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "users",
+      "customer"
+    ],
+    "object_id": "6",
+    "object_repr": "kasillas@test.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2021-02-22T22:59:42.793Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "users",
+      "customer"
+    ],
+    "object_id": "7",
+    "object_repr": "rooney@test.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2021-02-22T23:00:13.676Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "users",
+      "admin"
+    ],
+    "object_id": "2",
+    "object_repr": "testmaks@test.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2021-02-22T23:01:00.894Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "users",
+      "librarian"
+    ],
+    "object_id": "8",
+    "object_repr": "ainil@test.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2021-02-22T23:01:34.185Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "users",
+      "librarian"
+    ],
+    "object_id": "9",
+    "object_repr": "aigerim@test.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2021-02-23T05:07:13.338Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "1",
+    "object_repr": "Cristiano Ronaldo borrowed Delbirim",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2021-02-23T05:07:32.886Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "2",
+    "object_repr": "Messi Lionel borrowed King Lear",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2021-02-23T05:07:46.174Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "3",
+    "object_repr": "Neymar Junior borrowed Jamila",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2021-02-23T05:08:03.671Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "4",
+    "object_repr": "Wayne Rooney borrowed King Lear",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2021-02-23T05:08:17.195Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "5",
+    "object_repr": "Cristiano Ronaldo borrowed King Lear",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2021-02-23T05:46:07.323Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "4",
+    "object_repr": "Wayne Rooney borrowed King Lear",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2021-02-23T05:46:07.426Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "5",
+    "object_repr": "Cristiano Ronaldo borrowed King Lear",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2021-02-23T05:46:43.148Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "6",
+    "object_repr": "Cristiano Ronaldo borrowed Romeo and Juliet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2021-02-23T05:47:02.826Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "7",
+    "object_repr": "Wayne Rooney borrowed Romeo and Juliet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2021-02-23T05:47:20.677Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "6",
+    "object_repr": "Cristiano Ronaldo borrowed Romeo and Juliet",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2021-02-23T05:47:20.814Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "7",
+    "object_repr": "Wayne Rooney borrowed Romeo and Juliet",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2021-02-23T05:51:24.305Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "8",
+    "object_repr": "Cristiano Ronaldo borrowed Delbirim",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2021-02-23T05:51:39.925Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "borrow"
+    ],
+    "object_id": "9",
+    "object_repr": "Wayne Rooney borrowed Delbirim",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2021-02-23T05:57:27.194Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "fine"
+    ],
+    "object_id": "1",
+    "object_repr": "Fine object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2021-02-23T05:57:44.110Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "fine"
+    ],
+    "object_id": "2",
+    "object_repr": "Fine object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2021-02-23T05:58:00.539Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "library_app",
+      "fine"
+    ],
+    "object_id": "3",
+    "object_repr": "Fine object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2021-02-23T06:24:18.901Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "9",
+    "object_repr": "The Great Gatsby",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Book format\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2021-02-23T10:35:35.251Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "1",
+    "object_repr": "Jamila",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Summary\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2021-02-23T10:36:24.073Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "2",
+    "object_repr": "Delbirim",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Summary\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2021-02-23T10:37:45.639Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "3",
+    "object_repr": "Jaralangan jurok",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Summary\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2021-02-23T11:01:56.155Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "2",
+    "object_repr": "Delbirim",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Summary\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2021-02-23T11:02:35.343Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "1",
+    "object_repr": "Jamila",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Summary\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2021-02-23T11:03:04.738Z",
+    "user": [
+      "admin@test.com"
+    ],
+    "content_type": [
+      "book_shelf",
+      "book"
+    ],
+    "object_id": "3",
+    "object_repr": "Jaralangan jurok",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Summary\"]}}]"
+  }
+}
+]
