@@ -85,8 +85,8 @@ class Book(models.Model):
     language = models.ManyToManyField('Language')
     publish_date = models.PositiveSmallIntegerField(default=timezone.now().year)
     page_size = models.PositiveSmallIntegerField()
-    book_format = models.CharField(max_length=50, choices=[(i.name, i.name) for i in BookFormat.objects.all()],
-                                   default="Paper")
+    # book_format = models.CharField(max_length=50, choices=[(i.name, i.name) for i in BookFormat.objects.all()],
+    #                                default="Paper")
     lend_period = models.ForeignKey('library_app.LendPeriod', models.SET_NULL, null=True)
 
     def __str__(self):
