@@ -1,23 +1,10 @@
-from datetime import timedelta, date
+from datetime import timedelta, date, timezone, datetime
 
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django.utils.html import format_html
 
 from users.models import User, Customer
-
-
-# class Region(models.Model):  # Oblast
-#     name = models.CharField(max_length=50)
-#
-#
-# class District(models.Model):  # Rayon
-#     name = models.CharField(max_length=50)
-#     city = models.ForeignKey(Region, on_delete=models.CASCADE)
-#
-#
-# class Address(models.Model):  # Concrete address
-#     district = models.ForeignKey(District, on_delete=models.CASCADE)
-#     location = models.CharField(max_length=50)
 
 
 def library_image_directory(instance, filename):
@@ -26,7 +13,7 @@ def library_image_directory(instance, filename):
 
 class Library(models.Model):
     name = models.CharField(max_length=50)
-    image = models.ImageField(upload_to=library_image_directory, null=True)
+    image = models.ImageField(upload_to=library_image_directory, null=True, blank=True)
     address = models.CharField(max_length=256)
 
     class Meta:
@@ -49,6 +36,9 @@ class LibraryWorkingTime(models.Model):
         unique_together = ('library', 'day_of_week')
         verbose_name_plural = "Library working time"
 
+    def __str__(self):
+        return f'{self.day_of_week} day {self.open_time.hour} to {self.close_time.hour}'
+
 
 class LendPeriod(models.Model):
     name = models.CharField(max_length=200)
@@ -68,6 +58,15 @@ class Borrow(models.Model):
     def __str__(self):
         return self.customer.full_name + " borrowed " + self.book.title
 
+    def book_return_date(self):
+        if self.return_date < date.today():
+            return format_html(
+                '<span style="color: #FF0000;">{}</span>',
+                format(self.return_date, "%B %d, %Y"),
+            )
+        else:
+            return self.return_date
+
     @property
     def return_date(self):
         if hasattr(self.book, 'lend_period'):
@@ -78,11 +77,9 @@ class Borrow(models.Model):
         ordering = ['created']
 
 
-class Account(models.Model):
-    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name='reader_debt')
-    bill = models.FloatField(default=0.0)
-
-
 class Fine(models.Model):
     name = models.CharField(max_length=50)
     volume = models.PositiveIntegerField()
+
+    def __str__(self):
+        return self.name

@@ -66,6 +66,9 @@ class Publisher(models.Model):
 class BookFormat(models.Model):
     name = models.CharField(max_length=50, help_text="E-book, pdf, audio etc...")
 
+    def __str__(self):
+        return self.name
+
 
 class Book(models.Model):
     """
@@ -79,9 +82,11 @@ class Book(models.Model):
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
     publisher = models.ForeignKey('Publisher', on_delete=models.SET_NULL, null=True)
     genre = models.ManyToManyField(Genre, help_text="Select a genre for this book")
-    language = models.ForeignKey('Language', on_delete=models.SET_NULL, null=True)
+    language = models.ManyToManyField('Language')
     publish_date = models.PositiveSmallIntegerField(default=timezone.now().year)
     page_size = models.PositiveSmallIntegerField()
+    book_format = models.CharField(max_length=50, choices=[(i.name, i.name) for i in BookFormat.objects.all()],
+                                   default="Paper")
     lend_period = models.ForeignKey('library_app.LendPeriod', models.SET_NULL, null=True)
 
     def __str__(self):

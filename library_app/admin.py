@@ -1,8 +1,6 @@
 from django.contrib import admin
 
-
 from library_app.models import (
-    Account,
     Fine,
     Borrow,
     LendPeriod,
@@ -11,27 +9,25 @@ from library_app.models import (
 )
 
 
-@admin.register(Account)
-class AccountAdmin(admin.ModelAdmin):
-    list_display = ('customer', 'bill')
-
-    class Media:
-        css = {
-            'all': ('resize-widget.css',),
-        }
-
-
 @admin.register(Fine)
 class FineAdmin(admin.ModelAdmin):
+    list_display = ('name', 'get_volume')
+
     class Media:
         css = {
             'all': ('resize-widget.css',),
         }
+
+    def get_volume(self, obj):
+        return f'{obj.volume} som'
+
+    get_volume.short_description = 'Price'
+    get_volume.admin_order_field = 'volume'
 
 
 @admin.register(Borrow)
 class BorrowAdmin(admin.ModelAdmin):
-    list_display = ('customer', 'book', 'lend_from', 'return_date', 'lend_type')
+    list_display = ('customer', 'book', 'lend_from', 'book_return_date', 'lend_type')
 
     class Media:
         css = {
@@ -56,6 +52,8 @@ class LendPeriodAdmin(admin.ModelAdmin):
 
 @admin.register(LibraryWorkingTime)
 class LibraryWorkingTimeAdmin(admin.ModelAdmin):
+    list_display = ('library', 'day_of_week', 'open_time', 'close_time')
+
     class Media:
         css = {
             'all': ('resize-widget.css',),

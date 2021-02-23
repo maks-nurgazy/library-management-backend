@@ -5,13 +5,14 @@ from book_shelf.models import (
     Book,
     Genre,
     Language,
-    Publisher
+    Publisher,
+    BookFormat
 )
 
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    list_display = ('title', 'get_author', 'publish_date')
+    list_display = ('title', 'get_author', 'publish_date', 'lend_type', 'book_format')
 
     class Media:
         css = {
@@ -24,9 +25,23 @@ class BookAdmin(admin.ModelAdmin):
     get_author.short_description = 'Author'
     get_author.admin_order_field = 'title'
 
+    def lend_type(self, obj):
+        return obj.lend_period.name
+
+    lend_type.short_description = 'Borrow type'
+    lend_type.admin_order_field = 'lend_period__name'
+
 
 @admin.register(Genre)
 class GenreAdmin(admin.ModelAdmin):
+    class Media:
+        css = {
+            'all': ('resize-widget.css',),
+        }
+
+
+@admin.register(BookFormat)
+class BookFormatAdmin(admin.ModelAdmin):
     class Media:
         css = {
             'all': ('resize-widget.css',),

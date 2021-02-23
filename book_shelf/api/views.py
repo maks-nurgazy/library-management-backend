@@ -8,7 +8,7 @@ from book_shelf.api.serializers import (
     GenreSerializer,
     AuthorSerializer,
     PublisherSerializer,
-    BookSerializer
+    BookSerializer, BookDetailSerializer, AuthorDetailSerializer
 )
 from book_shelf.models import (
     Language,
@@ -20,8 +20,12 @@ from book_shelf.models import (
 
 
 class BookApiViewSet(ModelViewSet):
-    serializer_class = BookSerializer
     queryset = Book.objects.all()
+
+    def get_serializer_class(self):
+        if self.action == 'retrieve' or self.action == 'update' or self.action == 'partial_update':
+            return BookDetailSerializer
+        return BookSerializer
 
 
 class LanguageApiViewSet(ModelViewSet):
@@ -38,8 +42,12 @@ class GenreApiViewSet(ModelViewSet):
 
 class AuthorApiViewSet(ModelViewSet):
     permission_classes = (IsAdminOrReadOnly,)
-    serializer_class = AuthorSerializer
     queryset = Author.objects.all()
+
+    def get_serializer_class(self):
+        if self.action == 'retrieve':
+            return AuthorDetailSerializer
+        return AuthorSerializer
 
 
 class PublisherApiViewSet(ModelViewSet):
