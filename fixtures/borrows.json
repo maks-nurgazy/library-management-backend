@@ -1,0 +1,57 @@
+[
+{
+    "model": "library_app.borrow",
+    "pk": 1,
+    "fields": {
+        "customer": 3,
+        "book": 2,
+        "lend_from": "2021-02-23",
+        "x_renewal": 1,
+        "created": "2021-02-23T05:07:11.013Z"
+    }
+},
+{
+    "model": "library_app.borrow",
+    "pk": 2,
+    "fields": {
+        "customer": 4,
+        "book": 7,
+        "lend_from": "2021-02-23",
+        "x_renewal": 1,
+        "created": "2021-02-23T05:07:32.884Z"
+    }
+},
+{
+    "model": "library_app.borrow",
+    "pk": 3,
+    "fields": {
+        "customer": 5,
+        "book": 1,
+        "lend_from": "2021-02-20",
+        "x_renewal": 1,
+        "created": "2021-02-23T05:07:46.173Z"
+    }
+},
+{
+    "model": "library_app.borrow",
+    "pk": 8,
+    "fields": {
+        "customer": 3,
+        "book": 2,
+        "lend_from": "2021-02-10",
+        "x_renewal": 1,
+        "created": "2021-02-23T05:51:22.818Z"
+    }
+},
+{
+    "model": "library_app.borrow",
+    "pk": 9,
+    "fields": {
+        "customer": 7,
+        "book": 2,
+        "lend_from": "2021-01-01",
+        "x_renewal": 1,
+        "created": "2021-02-23T05:51:39.924Z"
+    }
+}
+]

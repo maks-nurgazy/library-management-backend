@@ -3,7 +3,7 @@ from django.contrib.auth.models import PermissionsMixin
 from django.core.exceptions import ValidationError
 from django.db import models
 
-from users.managers import LibrarianManager, CustomerManager, AdminManager
+from users.managers import LibrarianManager, CustomerManager, AdminManager, UserManager
 
 
 class User(AbstractBaseUser, PermissionsMixin):
@@ -39,7 +39,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     def full_name(self):
         return f'{self.first_name} {self.last_name}'
 
-    objects = AdminManager()
+    objects = UserManager()
 
     def __str__(self):
         return self.email

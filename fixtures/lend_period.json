@@ -1,0 +1,34 @@
+[
+{
+    "model": "library_app.lendperiod",
+    "pk": 1,
+    "fields": {
+        "name": "Main Lending",
+        "days_amount": 28
+    }
+},
+{
+    "model": "library_app.lendperiod",
+    "pk": 2,
+    "fields": {
+        "name": "Short Loan",
+        "days_amount": 1
+    }
+},
+{
+    "model": "library_app.lendperiod",
+    "pk": 3,
+    "fields": {
+        "name": "Week Loan",
+        "days_amount": 7
+    }
+},
+{
+    "model": "library_app.lendperiod",
+    "pk": 4,
+    "fields": {
+        "name": "Library Use",
+        "days_amount": 0
+    }
+}
+]

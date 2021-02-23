@@ -1,0 +1,184 @@
+[
+{
+    "model": "book_shelf.genre",
+    "pk": 1,
+    "fields": {
+        "name": "Biography"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 2,
+    "fields": {
+        "name": "Business"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 3,
+    "fields": {
+        "name": "Children"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 4,
+    "fields": {
+        "name": "Fantasy"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 5,
+    "fields": {
+        "name": "Fiction"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 6,
+    "fields": {
+        "name": "History"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 7,
+    "fields": {
+        "name": "Literature"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 8,
+    "fields": {
+        "name": "Mystery"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 9,
+    "fields": {
+        "name": "Religion"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 10,
+    "fields": {
+        "name": "Romance"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 11,
+    "fields": {
+        "name": "Science Fiction"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 12,
+    "fields": {
+        "name": "Technology"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 13,
+    "fields": {
+        "name": "Thriller"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 14,
+    "fields": {
+        "name": "Adventure"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 15,
+    "fields": {
+        "name": "Classics"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 16,
+    "fields": {
+        "name": "Comic book"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 17,
+    "fields": {
+        "name": "Crime"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 18,
+    "fields": {
+        "name": "Drama"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 19,
+    "fields": {
+        "name": "Fairytale"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 20,
+    "fields": {
+        "name": "Horror"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 21,
+    "fields": {
+        "name": "Poetry"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 22,
+    "fields": {
+        "name": "Satire"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 23,
+    "fields": {
+        "name": "Short Story"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 24,
+    "fields": {
+        "name": "Sport"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 25,
+    "fields": {
+        "name": "Food"
+    }
+},
+{
+    "model": "book_shelf.genre",
+    "pk": 26,
+    "fields": {
+        "name": "Detective"
+    }
+}
+]

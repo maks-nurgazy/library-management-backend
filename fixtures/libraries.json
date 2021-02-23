@@ -1,0 +1,11 @@
+[
+{
+    "model": "library_app.library",
+    "pk": 1,
+    "fields": {
+        "name": "Kashyktap tapkan kench",
+        "image": "library/Kashyktap tapkan kench/library.png",
+        "address": "Djal"
+    }
+}
+]

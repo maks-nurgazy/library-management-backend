@@ -1,0 +1,72 @@
+[
+{
+    "model": "book_shelf.author",
+    "pk": 1,
+    "fields": {
+        "name": "William",
+        "surname": "Shakespeare",
+        "date_of_birth": "1560-02-12",
+        "date_of_death": "1590-12-20"
+    }
+},
+{
+    "model": "book_shelf.author",
+    "pk": 2,
+    "fields": {
+        "name": "Agatha",
+        "surname": "Christie",
+        "date_of_birth": "1864-11-30",
+        "date_of_death": "1901-01-01"
+    }
+},
+{
+    "model": "book_shelf.author",
+    "pk": 3,
+    "fields": {
+        "name": "Chyngyz",
+        "surname": "Aitmatov",
+        "date_of_birth": "1928-06-12",
+        "date_of_death": "2008-06-10"
+    }
+},
+{
+    "model": "book_shelf.author",
+    "pk": 4,
+    "fields": {
+        "name": "Aaly",
+        "surname": "Tokombaev",
+        "date_of_birth": "1903-06-25",
+        "date_of_death": "1976-01-12"
+    }
+},
+{
+    "model": "book_shelf.author",
+    "pk": 5,
+    "fields": {
+        "name": "Mahmud",
+        "surname": "Kashkari",
+        "date_of_birth": "1507-10-10",
+        "date_of_death": "1570-08-09"
+    }
+},
+{
+    "model": "book_shelf.author",
+    "pk": 6,
+    "fields": {
+        "name": "Kobo",
+        "surname": "Abe",
+        "date_of_birth": "1924-01-01",
+        "date_of_death": "1993-01-02"
+    }
+},
+{
+    "model": "book_shelf.author",
+    "pk": 7,
+    "fields": {
+        "name": "Francis",
+        "surname": "Scott Fitzgerald",
+        "date_of_birth": "1980-10-10",
+        "date_of_death": null
+    }
+}
+]

@@ -1,0 +1,227 @@
+[
+{
+    "model": "book_shelf.book",
+    "pk": 1,
+    "fields": {
+        "title": "Jamila",
+        "summary": "The novel is told from the point of view of a fictional Kyrgyz artist, Seit, who tells the story by looking back on his childhood. The story recounts the love between his new sister-in-law Jamilya and a local crippled young man, Daniyar, while Jamilya's husband, Sadyk, is \"away at the front",
+        "isbn": "1-59017-194-2",
+        "author": 3,
+        "publisher": 13,
+        "publish_date": 1957,
+        "page_size": 281,
+        "book_format": "Paper",
+        "lend_period": 1,
+        "genre": [
+            15,
+            18
+        ],
+        "language": [
+            5,
+            3,
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "book_shelf.book",
+    "pk": 2,
+    "fields": {
+        "title": "Delbirim",
+        "summary": "The main character of the Kyrgyz-Uzbek film Delbirim Madina Talipbek was announced as the Best Actress of 2018 in Tashkent. The People’s Artist of Uzbekistan, Matyakub Matchanov, told today at a press conference.\r\n\r\n«Madina Talipbek brilliantly played the role of Asel in the film. Uzbekistan has appreciated her work,» he said.\r\n\r\nPresentation of the film in Bishkek will take place today. The movie was screened in Uzbekistan on November 16.",
+        "isbn": "1-59017-194-3",
+        "author": 3,
+        "publisher": 13,
+        "publish_date": 1961,
+        "page_size": 180,
+        "book_format": "Paper",
+        "lend_period": 2,
+        "genre": [
+            1,
+            18
+        ],
+        "language": [
+            3,
+            2
+        ]
+    }
+},
+{
+    "model": "book_shelf.book",
+    "pk": 3,
+    "fields": {
+        "title": "Jaralangan jurok",
+        "summary": "Broken heart (also known as a heartbreak or heartache) is a metaphor for the intense emotional stress or pain one feels at experiencing great and deep longing. The concept is cross-cultural, often cited with reference to a desired or lost lover.[1]\r\n\r\nFailed romantic love can be extremely painful; sufferers of a broken heart may succumb to depression, anxiety and, in more extreme cases, post-traumatic stress disorder.",
+        "isbn": "1-59017-194-4",
+        "author": 4,
+        "publisher": 9,
+        "publish_date": 1974,
+        "page_size": 222,
+        "book_format": "Paper",
+        "lend_period": 3,
+        "genre": [
+            19,
+            4,
+            5
+        ],
+        "language": [
+            3,
+            6
+        ]
+    }
+},
+{
+    "model": "book_shelf.book",
+    "pk": 4,
+    "fields": {
+        "title": "The Murder of Roger Ackroyd",
+        "summary": "In King's Abbot, wealthy widow Mrs Ferrars unexpectedly commits suicide, which distresses her fiancé widower Roger Ackroyd. At dinner that evening in Ackroyd's home of Fernly Park, his guests include his sister-in-law Mrs Cecil Ackroyd and her daughter Flora, big-game hunter Major Blunt, Ackroyd's personal secretary Geoffrey Raymond, and Dr James Sheppard, whom Ackroyd invited earlier that day. During dinner, Flora announces her engagement to Ackroyd's stepson, Ralph Paton. After dinner, Ackroyd reveals to Sheppard in his study that Mrs Ferrars had confided in him that she was being blackmailed over the murder of her husband.",
+        "isbn": "0-14-118727-1",
+        "author": 2,
+        "publisher": 3,
+        "publish_date": 2013,
+        "page_size": 157,
+        "book_format": "Paper",
+        "lend_period": 1,
+        "genre": [
+            26,
+            5
+        ],
+        "language": [
+            1
+        ]
+    }
+},
+{
+    "model": "book_shelf.book",
+    "pk": 5,
+    "fields": {
+        "title": "Hamlet",
+        "summary": "Among Shakespeare's plays, \"Hamlet\" is considered by many his masterpiece. Among actors, the role of Hamlet, Prince of Denmark, is considered the jewel in the crown of a triumphant theatrical career. Now Kenneth Branagh plays the leading role and co-directs a brillant ensemble performance. Three generations of legendary leading actors, many of whom first assembled for the Oscar-winning film \"Henry V\", gather here to perform the rarely heard complete version of the play. This clear, subtly nuanced, stunning dramatization, presented by The Renaissance Theatre Company in association with \"Bbc\" Broadcasting, features such luminaries as Sir John Gielgud, Derek Jacobi, Emma Thompson and Christopher Ravenscroft. It combines a full cast with stirring music and sound effects to bring this magnificent Shakespearen classic vividly to life. Revealing new riches with each listening, this production of \"Hamlet\" is an invaluable aid for students, teachers and all true lovers of Shakespeare - a recording to be treasured for decades to come",
+        "isbn": "1-59017-194-5",
+        "author": 1,
+        "publisher": 1,
+        "publish_date": 1767,
+        "page_size": 489,
+        "book_format": "Paper",
+        "lend_period": 1,
+        "genre": [
+            6,
+            7
+        ],
+        "language": [
+            1,
+            10,
+            8,
+            9
+        ]
+    }
+},
+{
+    "model": "book_shelf.book",
+    "pk": 6,
+    "fields": {
+        "title": "Romeo and Juliet",
+        "summary": "In Romeo and Juliet, Shakespeare creates a violent world, in which two young people fall in love. It is not simply that their families disapprove; the Montagues and the Capulets are engaged in a blood feud.\r\n\r\nIn this death-filled setting, the movement from love at first sight to the lovers’ final union in death seems almost inevitable. And yet, this play set in an extraordinary world has become the quintessential story of young love. In part because of its exquisite language, it is easy to respond as if it were about all young lovers",
+        "isbn": "1-59017-194-9",
+        "author": 1,
+        "publisher": 5,
+        "publish_date": 1788,
+        "page_size": 321,
+        "book_format": "Paper",
+        "lend_period": 4,
+        "genre": [
+            15,
+            18,
+            19,
+            7
+        ],
+        "language": [
+            13,
+            1,
+            8,
+            6
+        ]
+    }
+},
+{
+    "model": "book_shelf.book",
+    "pk": 7,
+    "fields": {
+        "title": "King Lear",
+        "summary": "King Lear challenges us with the magnitude, intensity, and sheer duration of the pain that it represents. Its figures harden their hearts, engage in violence, or try to alleviate the suffering of others. Lear himself rages until his sanity cracks. What, then, keeps bringing us back to King Lear? For all the force of its language, King Lear is almost equally powerful when translated, suggesting that it is the story, in large part, that draws us to the play.\r\n\r\nThe play tells us about families struggling between greed and cruelty, on the one hand, and support and consolation, on the other. Emotions are extreme, magnified to gigantic proportions. We also see old age portrayed in all its vulnerability, pride, and, perhaps, wisdom—one reason this most devastating of Shakespeare’s tragedies is also perhaps his most moving",
+        "isbn": "2-59017-194-3",
+        "author": 5,
+        "publisher": 8,
+        "publish_date": 1876,
+        "page_size": 211,
+        "book_format": "Paper",
+        "lend_period": 4,
+        "genre": [
+            13
+        ],
+        "language": [
+            11
+        ]
+    }
+},
+{
+    "model": "book_shelf.book",
+    "pk": 8,
+    "fields": {
+        "title": "Julius Caesar",
+        "summary": "The Oxford School Shakespeare has become the preferred introduction to the literary legacy of the greatest playwright in the English language. This exclusive collection of the Bard's best works has been designed specifically for readers new to Shakespeare's rich literary legacy. Each play is presented complete and unabridged, in large print. Every book is well illustrated",
+        "isbn": "2-59017-194-4",
+        "author": 6,
+        "publisher": 4,
+        "publish_date": 2010,
+        "page_size": 450,
+        "book_format": "Paper",
+        "lend_period": 1,
+        "genre": [
+            9,
+            10,
+            22,
+            11,
+            23,
+            24,
+            12,
+            13
+        ],
+        "language": [
+            13,
+            11,
+            1,
+            10,
+            8,
+            9,
+            12
+        ]
+    }
+},
+{
+    "model": "book_shelf.book",
+    "pk": 9,
+    "fields": {
+        "title": "The Great Gatsby",
+        "summary": "The Great Gatsby, F. Scott Fitzgerald's third book, stands as the supreme achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by generations of readers. The story is of the fabulously wealthy Jay Gatsby and his new love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted \"gin was the national drink and sex the national obsession,\" it is an exquisitely crafted tale of America in the 1920s.\r\n\r\nThe Great Gatsby is one of the great classics of twentieth-century literature.",
+        "isbn": "9780743273565",
+        "author": 7,
+        "publisher": 12,
+        "publish_date": 2010,
+        "page_size": 40,
+        "book_format": "PDF",
+        "lend_period": 3,
+        "genre": [
+            26,
+            6
+        ],
+        "language": [
+            1,
+            10,
+            3
+        ]
+    }
+}
+]

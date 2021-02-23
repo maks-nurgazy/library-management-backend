@@ -1,0 +1,155 @@
+[
+{
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+        "last_login": "2021-02-22T10:18:46.045Z",
+        "is_superuser": true,
+        "email": "admin@test.com",
+        "password": "pbkdf2_sha256$216000$pqvyYOKlLpUM$XK9D5oscCCwHRsO4Cv57Le0JjXfZCgwPJ0ahBOKhcxo=",
+        "first_name": "admin",
+        "last_name": "admin",
+        "role": "ADMIN",
+        "is_active": true,
+        "is_staff": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+        "last_login": null,
+        "is_superuser": false,
+        "email": "cristiano@test.com",
+        "password": "pbkdf2_sha256$216000$F1Lb5uTsBgmL$+TKpAT+zA803r3UO+X2MvyOFTTWrV7ShugotoCbqTJc=",
+        "first_name": "Cristiano",
+        "last_name": "Ronaldo",
+        "role": "CUSTOMER",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+        "last_login": null,
+        "is_superuser": false,
+        "email": "lionel@test.com",
+        "password": "pbkdf2_sha256$216000$ZrIW3jMhDpJL$D6NNX4Xb/2Z2+oqtDd7McQHDM9aHk/Dn9xY2FnVszQM=",
+        "first_name": "Messi",
+        "last_name": "Lionel",
+        "role": "CUSTOMER",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 5,
+    "fields": {
+        "last_login": null,
+        "is_superuser": false,
+        "email": "junior@test.com",
+        "password": "pbkdf2_sha256$216000$XsByyG5Ozeyg$LN6axr75yeLTwRLH7FJK7WeGnEgGK8QRfliyjO72xwE=",
+        "first_name": "Neymar",
+        "last_name": "Junior",
+        "role": "CUSTOMER",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 6,
+    "fields": {
+        "last_login": null,
+        "is_superuser": false,
+        "email": "kasillas@test.com",
+        "password": "pbkdf2_sha256$216000$sExvwL2Ru9Mj$6Z+3voMSOjj95kkBsmSzEuX9fwdnulq5xOs+tl3DDig=",
+        "first_name": "Iker",
+        "last_name": "Kasillas",
+        "role": "CUSTOMER",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 7,
+    "fields": {
+        "last_login": null,
+        "is_superuser": false,
+        "email": "rooney@test.com",
+        "password": "pbkdf2_sha256$216000$l0dAC9NHNKJg$1L0Hd55ZmSvMH5UQ6VVzs5JUIL3HKDSM5q9VvfUM+dI=",
+        "first_name": "Wayne",
+        "last_name": "Rooney",
+        "role": "CUSTOMER",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 8,
+    "fields": {
+        "last_login": null,
+        "is_superuser": false,
+        "email": "ainil@test.com",
+        "password": "pbkdf2_sha256$216000$45xw0073WN4B$0c55LxKKPhouZqTYTMhjUWhlfOj5n0QNn5jRGDN+PKQ=",
+        "first_name": "Ainil",
+        "last_name": "Kemelova",
+        "role": "LIBRARIAN",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 9,
+    "fields": {
+        "last_login": null,
+        "is_superuser": false,
+        "email": "aigerim@test.com",
+        "password": "pbkdf2_sha256$216000$nKMg2VNRt6M3$vw1PnWY1vtAvqWldF/HFvmxG9VM78Io/r9oYbhXT6gc=",
+        "first_name": "Aigerim",
+        "last_name": "Maisalbekova",
+        "role": "LIBRARIAN",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 10,
+    "fields": {
+        "last_login": null,
+        "is_superuser": true,
+        "email": "testadmin@test.com",
+        "password": "pbkdf2_sha256$216000$Q5p0Ow6PiWCU$kR2EQxQnCStaexGIoD0AeU9x3CXdvuLCb2DlyYLThfA=",
+        "first_name": "",
+        "last_name": "",
+        "role": "ADMIN",
+        "is_active": true,
+        "is_staff": true,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

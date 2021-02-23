@@ -11,3 +11,5 @@ from library_app.models import (
 class LibraryApiViewSet(ModelViewSet):
     serializer_class = LibrarySerializer
     queryset = Library.objects.all()
+
+

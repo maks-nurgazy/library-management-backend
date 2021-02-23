@@ -10,5 +10,4 @@ router.register('libraries', LibraryApiViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-
 ]

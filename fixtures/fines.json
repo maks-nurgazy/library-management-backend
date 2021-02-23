@@ -1,0 +1,26 @@
+[
+{
+    "model": "library_app.fine",
+    "pk": 1,
+    "fields": {
+        "name": "Standart",
+        "volume": 10
+    }
+},
+{
+    "model": "library_app.fine",
+    "pk": 2,
+    "fields": {
+        "name": "Week Loan",
+        "volume": 30
+    }
+},
+{
+    "model": "library_app.fine",
+    "pk": 3,
+    "fields": {
+        "name": "Short Loan",
+        "volume": 50
+    }
+}
+]

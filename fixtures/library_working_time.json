@@ -1,0 +1,62 @@
+[
+{
+    "model": "library_app.libraryworkingtime",
+    "pk": 1,
+    "fields": {
+        "library": 1,
+        "day_of_week": 1,
+        "open_time": "09:00:00",
+        "close_time": "19:00:00"
+    }
+},
+{
+    "model": "library_app.libraryworkingtime",
+    "pk": 2,
+    "fields": {
+        "library": 1,
+        "day_of_week": 2,
+        "open_time": "09:00:00",
+        "close_time": "19:00:00"
+    }
+},
+{
+    "model": "library_app.libraryworkingtime",
+    "pk": 3,
+    "fields": {
+        "library": 1,
+        "day_of_week": 3,
+        "open_time": "09:00:00",
+        "close_time": "19:00:00"
+    }
+},
+{
+    "model": "library_app.libraryworkingtime",
+    "pk": 4,
+    "fields": {
+        "library": 1,
+        "day_of_week": 4,
+        "open_time": "09:00:00",
+        "close_time": "19:00:00"
+    }
+},
+{
+    "model": "library_app.libraryworkingtime",
+    "pk": 5,
+    "fields": {
+        "library": 1,
+        "day_of_week": 5,
+        "open_time": "09:00:00",
+        "close_time": "19:00:00"
+    }
+},
+{
+    "model": "library_app.libraryworkingtime",
+    "pk": 6,
+    "fields": {
+        "library": 1,
+        "day_of_week": 6,
+        "open_time": "09:00:00",
+        "close_time": "13:00:00"
+    }
+}
+]

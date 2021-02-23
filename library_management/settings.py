@@ -13,6 +13,8 @@ import os
 from datetime import timedelta
 from pathlib import Path
 
+import _locale
+
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,6 +31,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'e9_3zcn1+mm_&=%&l)$-m#67ps9-r3
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
+
 
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
@@ -197,3 +200,5 @@ db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+_locale._getdefaultlocale = (lambda *args: ['en_US', 'utf8'])

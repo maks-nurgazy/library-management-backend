@@ -1,0 +1,93 @@
+[
+{
+    "model": "book_shelf.language",
+    "pk": 1,
+    "fields": {
+        "name": "English"
+    }
+},
+{
+    "model": "book_shelf.language",
+    "pk": 2,
+    "fields": {
+        "name": "Russian"
+    }
+},
+{
+    "model": "book_shelf.language",
+    "pk": 3,
+    "fields": {
+        "name": "Kyrgyz"
+    }
+},
+{
+    "model": "book_shelf.language",
+    "pk": 4,
+    "fields": {
+        "name": "Uzbek"
+    }
+},
+{
+    "model": "book_shelf.language",
+    "pk": 5,
+    "fields": {
+        "name": "Kazakh"
+    }
+},
+{
+    "model": "book_shelf.language",
+    "pk": 6,
+    "fields": {
+        "name": "Turkish"
+    }
+},
+{
+    "model": "book_shelf.language",
+    "pk": 7,
+    "fields": {
+        "name": "Spanish"
+    }
+},
+{
+    "model": "book_shelf.language",
+    "pk": 8,
+    "fields": {
+        "name": "German"
+    }
+},
+{
+    "model": "book_shelf.language",
+    "pk": 9,
+    "fields": {
+        "name": "Italian"
+    }
+},
+{
+    "model": "book_shelf.language",
+    "pk": 10,
+    "fields": {
+        "name": "French"
+    }
+},
+{
+    "model": "book_shelf.language",
+    "pk": 11,
+    "fields": {
+        "name": "Chinese"
+    }
+},
+{
+    "model": "book_shelf.language",
+    "pk": 12,
+    "fields": {
+        "name": "Japanese"
+    }
+},
+{
+    "model": "book_shelf.language",
+    "pk": 13,
+    "fields": {
+        "name": "Arabic"
+    }
+}
+]

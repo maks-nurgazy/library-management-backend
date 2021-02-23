@@ -1,0 +1,107 @@
+[
+{
+    "model": "book_shelf.publisher",
+    "pk": 1,
+    "fields": {
+        "name": "Penguin Classics UK"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 2,
+    "fields": {
+        "name": "Hachette Livre"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 3,
+    "fields": {
+        "name": "Macmillan Publishers"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 4,
+    "fields": {
+        "name": "Simon & Schuster"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 5,
+    "fields": {
+        "name": "McGraw-Hill"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 6,
+    "fields": {
+        "name": "Pearson Education"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 7,
+    "fields": {
+        "name": "Scholastic"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 8,
+    "fields": {
+        "name": "Super Info"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 9,
+    "fields": {
+        "name": "AKI PRESS"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 10,
+    "fields": {
+        "name": "Tamchy"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 11,
+    "fields": {
+        "name": "Kutbilim"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 12,
+    "fields": {
+        "name": "Raritet"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 13,
+    "fields": {
+        "name": "Altyn Tamga"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 14,
+    "fields": {
+        "name": "Biznes Press"
+    }
+},
+{
+    "model": "book_shelf.publisher",
+    "pk": 15,
+    "fields": {
+        "name": "Zamandash"
+    }
+}
+]
