@@ -12,7 +12,7 @@ from book_shelf.models import (
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    list_display = ('title', 'get_author', 'publish_date', 'lend_type')
+    list_display = ('title', 'get_author', 'publish_date', 'lend_type', 'book_format')
 
     class Media:
         css = {
