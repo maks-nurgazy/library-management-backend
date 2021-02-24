@@ -28,6 +28,12 @@ class CustomerViewSet(ModelViewSet):
     queryset = Customer.objects.all()
     serializer_class = CustomerSerializer
 
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        content = {'id': instance.id}
+        self.perform_destroy(instance)
+        return Response(content, status=status.HTTP_200_OK)
+
 
 class UserLoginView(GenericAPIView):
     """ User login url """

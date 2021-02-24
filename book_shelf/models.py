@@ -70,6 +70,10 @@ class BookFormat(models.Model):
         return self.name
 
 
+def book_image_directory(instance, filename):
+    return f'library/library-name/books/{instance.name}/{filename}'
+
+
 class Book(models.Model):
     """
     An Book class - to describe book in the system.
@@ -80,6 +84,7 @@ class Book(models.Model):
                             help_text='13 Character <a href="https://www.isbn-international.org/content/what-isbn'
                                       '">ISBN number</a>')
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
+    image = models.ImageField(upload_to=book_image_directory, null=True, blank=True)
     publisher = models.ForeignKey('Publisher', on_delete=models.SET_NULL, null=True)
     genre = models.ManyToManyField(Genre, help_text="Select a genre for this book")
     language = models.ManyToManyField('Language')

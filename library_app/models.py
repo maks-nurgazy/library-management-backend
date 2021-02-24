@@ -4,6 +4,7 @@ from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.utils.html import format_html
 
+from library_app.managers import BorrowManager
 from users.models import User, Customer
 
 
@@ -49,11 +50,13 @@ class LendPeriod(models.Model):
 
 
 class Borrow(models.Model):
-    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name='borrowed_books')
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name='borrowed')
     book = models.ForeignKey('book_shelf.Book', on_delete=models.SET_NULL, null=True)
     lend_from = models.DateField(default=date.today)
     x_renewal = models.SmallIntegerField(editable=False, default=1)
     created = models.DateTimeField(auto_now_add=True)
+
+    objects = BorrowManager()
 
     def __str__(self):
         return self.customer.full_name + " borrowed " + self.book.title
