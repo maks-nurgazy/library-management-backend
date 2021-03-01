@@ -5,7 +5,7 @@ from library_app.models import (
     Borrow,
     LendPeriod,
     LibraryWorkingTime,
-    Library
+    Library, DebtUser
 )
 
 
@@ -25,9 +25,19 @@ class FineAdmin(admin.ModelAdmin):
     get_volume.admin_order_field = 'volume'
 
 
+@admin.register(DebtUser)
+class DebtUserAdmin(admin.ModelAdmin):
+    list_display = ('customer', 'debt')
+
+    class Media:
+        css = {
+            'all': ('resize-widget.css',),
+        }
+
+
 @admin.register(Borrow)
 class BorrowAdmin(admin.ModelAdmin):
-    list_display = ('customer', 'book', 'lend_from', 'book_return_date', 'lend_type')
+    list_display = ('customer', 'book', 'lend_from', 'book_return_date', 'returned', 'lend_type')
 
     class Media:
         css = {

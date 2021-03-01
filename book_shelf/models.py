@@ -71,7 +71,7 @@ class BookFormat(models.Model):
 
 
 def book_image_directory(instance, filename):
-    return f'library/library-name/books/{instance.name}/{filename}'
+    return f'library/library-name/books/{filename}'
 
 
 class Book(models.Model):

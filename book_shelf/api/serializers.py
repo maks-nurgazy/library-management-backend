@@ -15,8 +15,9 @@ class BookSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Book
-        fields = ('id', 'title', 'summary', 'isbn', 'book_author', 'publish_date', 'page_size', 'book_format', 'author',
-                  'publisher', 'lend_period', 'genre', 'language')
+        fields = (
+            'id', 'title', 'summary', 'isbn', 'image', 'book_author', 'publish_date', 'page_size', 'book_format',
+            'author', 'publisher', 'lend_period', 'genre', 'language')
         extra_kwargs = {
             'publisher': {'write_only': True},
             'page_size': {'write_only': True},

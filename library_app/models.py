@@ -54,6 +54,7 @@ class Borrow(models.Model):
     book = models.ForeignKey('book_shelf.Book', on_delete=models.SET_NULL, null=True)
     lend_from = models.DateField(default=date.today)
     x_renewal = models.SmallIntegerField(editable=False, default=1)
+    returned = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
 
     objects = BorrowManager()
@@ -62,7 +63,7 @@ class Borrow(models.Model):
         return self.customer.full_name + " borrowed " + self.book.title
 
     def book_return_date(self):
-        if self.return_date < date.today():
+        if self.return_date < date.today() and self.returned == False:
             return format_html(
                 '<span style="color: #FF0000;">{}</span>',
                 format(self.return_date, "%B %d, %Y"),
@@ -73,7 +74,7 @@ class Borrow(models.Model):
     @property
     def return_date(self):
         if hasattr(self.book, 'lend_period'):
-            return self.lend_from + timedelta(days=self.book.lend_period.days_amount)
+            return self.lend_from + timedelta(days=self.book.lend_period.days_amount) * self.x_renewal
         return self.lend_from + timedelta(days=3)
 
     class Meta:
@@ -82,7 +83,13 @@ class Borrow(models.Model):
 
 class Fine(models.Model):
     name = models.CharField(max_length=50)
+    lend_period = models.OneToOneField(LendPeriod, on_delete=models.CASCADE, related_name='fine', null=True)
     volume = models.PositiveIntegerField()
 
     def __str__(self):
         return self.name
+
+
+class DebtUser(models.Model):
+    customer = models.ForeignKey(User, on_delete=models.CASCADE, related_name='debts')
+    debt = models.IntegerField()
